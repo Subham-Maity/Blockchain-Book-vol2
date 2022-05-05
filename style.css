@@ -1,15 +1,15 @@
 body {
-  background-color: black;
+  background-color: #191627;
   color: white;
 }
 @media screen and (prefers-color-scheme: light) {
   body {
     background-color: white;
-    color: black;
+    color: rgb(28, 13, 83);
   }
 }
 h1 {
-  color: rgb(23, 199, 146);
+  color: #8251ff;
 }
 h3{
   color: rgb(255, 145, 0);
