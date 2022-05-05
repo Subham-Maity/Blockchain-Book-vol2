@@ -40,3 +40,11 @@ For that purpose, blockchain is the best solution. It is a decentralized system 
 
 ### Who invented blockchain in 1991?
 Stuart Haber and W. Scott Stornetta envisioned what many people have come to know as blockchain, in 1991. Their first work involved working on a cryptographically secured chain of blocks whereby no one could tamper with timestamps of documents.
+
+<p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/3.png?raw=true "/>
+        </p>
+
+### 3. Satoshi Nakamoto ?
+
+Nakamoto was the one who mined the first blockchain of Bitcoin and was the one who published the whitepaper for the digital currency. Nakamoto had envisioned Bitcoin to be a token of transaction that would be widely adopted by the world to protect against inflation.
