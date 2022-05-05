@@ -1,7 +1,7 @@
 ## I cover all aspects of Blockchain from basic to advanced
 
 # Writer Intro
-I am **Subham Maity**
+## I am **Subham Maity**
 I love Programming. One of the aims I had when I started ```CodeXam``` was to make learning programming easy.
 ******************
 # 1. Why should we study Blockchain?
