@@ -42,20 +42,31 @@ For that purpose, blockchain is the best solution. It is a decentralized system 
 Stuart Haber and W. Scott Stornetta envisioned what many people have come to know as blockchain, in 1991. Their first work involved working on a cryptographically secured chain of blocks whereby no one could tamper with timestamps of documents.
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/3.png?raw=true "/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/3.png?raw=true " width="500px" />
         </p>
 
 ### Satoshi Nakamoto ?
 
 Nakamoto was the one who mined the first blockchain of Bitcoin and was the one who published the whitepaper for the digital currency. Nakamoto had envisioned Bitcoin to be a token of transaction that would be widely adopted by the world to protect against inflation.
 
+
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/4.gif?raw=true "/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/4.gif?raw=true "width="300px"/>
         </p>
 
 
 ### What is Blockchain Technology?
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/5.gif?raw=true "/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/5.gif?raw=true "  width="400px"/>
         </p>
+
+Blockchain is a distributed ledger that is a collection of records, called blocks, that are linked together by cryptography.
+
+
+### Example of Blockchain in Real Life
+
+Let's say I purchase something from an offline store, and I have a ledger in which I can record the details of the purchase, and that ledger was created by the store. Now if the shopkeeper manipulates the ledger, I can't do anything.
+
+
+But in the case of blockchain, Shopkeeper can't manipulate the ledger, because the ledger is linked to the blockchain ,and it is immutable.If the shopkeeper try to manipulate the ledger, you can easily find out someone is trying to tamper with the ledger ,and you can easily stop him.
