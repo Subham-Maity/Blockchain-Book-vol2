@@ -25,8 +25,8 @@ The Global Financial Crisis of 2007-2008 had far-reaching impacts. It catalyzed 
 So we can say ...
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/1.png?raw=true "width="400px"/>
-        </p>
+                <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/1.png?raw=true "width="300"/>
+                </p>
 
 
 
@@ -42,8 +42,8 @@ For that purpose, blockchain is the best solution. It is a decentralized system 
 Stuart Haber and W. Scott Stornetta envisioned what many people have come to know as blockchain, in 1991. Their first work involved working on a cryptographically secured chain of blocks whereby no one could tamper with timestamps of documents.
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/3.png?raw=true " width="500px" />
-        </p>
+                <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/3.png?raw=true " width="300px" />
+                </p>
 
 ### Satoshi Nakamoto ?
 
