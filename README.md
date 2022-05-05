@@ -45,6 +45,17 @@ Stuart Haber and W. Scott Stornetta envisioned what many people have come to kno
         <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/3.png?raw=true "/>
         </p>
 
-### 3. Satoshi Nakamoto ?
+### Satoshi Nakamoto ?
 
 Nakamoto was the one who mined the first blockchain of Bitcoin and was the one who published the whitepaper for the digital currency. Nakamoto had envisioned Bitcoin to be a token of transaction that would be widely adopted by the world to protect against inflation.
+
+<p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/4.gif?raw=true "/>
+        </p>
+
+
+### What is Blockchain Technology?
+
+<p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/5.gif?raw=true "/>
+        </p>
