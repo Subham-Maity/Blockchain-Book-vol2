@@ -9,7 +9,7 @@ I love Programming. One of the aims I had when I started ```CodeXam``` was to ma
 **Look at the image of 2008 financial crisis**
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/2.jpg?raw=true "/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/2.jpg?raw=true " width="400px"/>
         </p>
 
 
@@ -25,7 +25,7 @@ The Global Financial Crisis of 2007-2008 had far-reaching impacts. It catalyzed 
 So we can say ...
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/1.png?raw=true "/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/1.png?raw=true "width="400px"/>
         </p>
 
 
