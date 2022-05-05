@@ -66,7 +66,13 @@ Blockchain is a distributed ledger that is a collection of records, called block
 
 ### Example of Blockchain in Real Life
 
+<p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/6.gif?raw=true "  width="200px"/>
+        </p>
+
+
 Let's say I purchase something from an offline store, and I have a ledger in which I can record the details of the purchase, and that ledger was created by the store. Now if the shopkeeper manipulates the ledger, I can't do anything.
 
 
 But in the case of blockchain, Shopkeeper can't manipulate the ledger, because the ledger is linked to the blockchain ,and it is immutable.If the shopkeeper try to manipulate the ledger, you can easily find out someone is trying to tamper with the ledger ,and you can easily stop him.
+
