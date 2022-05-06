@@ -76,3 +76,23 @@ Let's say I purchase something from an offline store, and I have a ledger in whi
 
 But in the case of blockchain, Shopkeeper can't manipulate the ledger, because the ledger is linked to the blockchain ,and it is immutable.If the shopkeeper try to manipulate the ledger, you can easily find out someone is trying to tamper with the ledger ,and you can easily stop him.
 
+# Applications of Blockchain Technology 
+
+### 1. Product Tracking
+
+Blockchain could also help verify the authenticity of imported raw
+materials, such as nuts, cocoa and coffee. "In Denmark, we don't have good
+documentation of raw materials we import," Høgh Jensen explained. This is
+because long supply chains-where food manufacturers are purchasing
+from suppliers rather than primary producers-don't always come with
+detailed documentation.
+
+For that reason, blockchain could be used to track the raw materials
+
+**The Technical University of Denmark is developing blockchain solutions for small and medium-sized food manufacturers in an effort to combat food fraud in high-value products.**
+
+### 2. Smart Contracts
+
+<p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/6.gif?raw=true "  width="200px"/>
+        </p>
