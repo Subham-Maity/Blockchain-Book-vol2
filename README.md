@@ -133,7 +133,10 @@ You want to use a system that takes your money and then gives you what you want 
 
 Here, it would be a vending machine.
 
-Vending Machine
+<p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/10.gif?raw=true "  width="200px"/>
+        </p>
+
 
 You can buy as many canned slow poisons as you want without having to trust anybody.
 

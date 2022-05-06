@@ -1,9 +1,13 @@
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+}
 
 body {
   background-color: #191627;
   color: white;
   font-family: Verdana, sans-serif;
-
+  font-size: 14px;
 }
 @media screen and (prefers-color-scheme: light) {
   body {
@@ -29,6 +33,7 @@ h1 {
 
 }
 p{
+  margin: 4em 5em;
   text-align: center;
   
 }
