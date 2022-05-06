@@ -1,7 +1,7 @@
 ## I cover all aspects of Blockchain from basic to advanced
 
 # Writer Intro
-## I am **Subham Maity**
+## I am **[Subham Maity](https://subham-maity.github.io/subham/)**
 I love Programming. One of the aims I had when I started ```CodeXam``` was to make learning programming easy.
 ******************
 # 1. Why should we study Blockchain?
@@ -94,5 +94,58 @@ For that reason, blockchain could be used to track the raw materials
 ### 2. Smart Contracts
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/6.gif?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/7.gif?raw=true "  width="200px"/>
         </p>
+
+- smart contracts are a set of rules that are executed by a smart contract
+- smart contracts are run on the ethereum blockchain
+
+#### Real World Example
+
+The shop looks like this – you pay first and then the guy hands you your stuff.
+
+You pay him for the instant noodles, and you find that the shopkeeper just sits back down on his chair and does nothing.
+
+“Give me the noodles!”
+
+“Sure, that’ll be ₹20.”
+
+“I just paid you!”
+
+“When? No, you didn’t.”
+
+Other than calling the police or starting a fight, you would have no recourse.
+
+The problem here was that you had to trust a human to do his part after you did yours.
+
+While people generally do their part in an implied contract like this one (the contract here was “I give you the stuff after you pay me”), relying on humans to be honest is not an ironclad solution and people get cheated every once in a while.
+
+(Note: Smart contract is just a marketing term for computer programs. It has absolutely nothing to do with a legal contract. Do not relate smart contracts with contracts in a legal sense.)
+
+You would preferably want to take away this element of having to trust this shopkeeper to hold his end of the bargain.
+
+You want to use a system that takes your money and then gives you what you want for sure (a type of contract where you don’t have to trust anybody).
+
+Here, it would be a vending machine.
+
+Vending Machine
+
+You can buy as many canned slow poisons as you want without having to trust anybody.
+
+You put your money in, you get the stuff you want. You don’t put your money in, you don’t get the stuff you want. You put extra money in, you get change.
+
+You don’t have to trust anybody – it’s an automatic machine that does as it’s programmed to do and nothing else.
+
+(To those of you thinking, what if the machine is malfunctioning – these are all vagaries of the real world. In the world of code, you don’t have to think about this. The program will execute exactly as written.)
+
+The vending machine is a real world example of a smart contract.
+
+It is a software (in this case, real world machinery) executing its code (in this case, giving you the item when you put in money).
+
+That’s it: A smart contract is just a fancy word for a piece of code that automatically executes something in a predetermined way. This piece of code is stored and executed in a distributed/decentralized manner (more on that later).
+
+They are mainly used to reduce the need for a trusted intermediary, disputes, and frauds.
+
+I repeat: it has nothing to do with contracts in the legal sense.
+
+In fact, smart contracts aren’t smart at all. They are just pieces of code that execute exactly as written. For example, if a well-known billionaire is extremely thirsty and offers to pay a million dollars for a drink, it would be smart to take it. But… the vending machine won’t take it, because it hasn’t been explicitly programmed to do so. 
