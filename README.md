@@ -108,13 +108,13 @@ The shop looks like this – you pay first and then the guy hands you your stuff
 
 You pay him for the instant noodles, and you find that the shopkeeper just sits back down on his chair and does nothing.
 
-“Give me the noodles!”
+* “Give me the noodles!”
 
-“Sure, that’ll be ₹20.”
+* “Sure, that’ll be ₹20.”
 
-“I just paid you!”
+* “I just paid you!”
 
-“When? No, you didn’t.”
+* “When? No, you didn’t.”
 
 Other than calling the police or starting a fight, you would have no recourse.
 <p align="center">
