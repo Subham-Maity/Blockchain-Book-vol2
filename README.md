@@ -101,7 +101,9 @@ For that reason, blockchain could be used to track the raw materials
 - smart contracts are run on the ethereum blockchain
 
 #### Real World Example
-
+<p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/8.jpg?raw=true "  width="200px"/>
+        </p>
 The shop looks like this – you pay first and then the guy hands you your stuff.
 
 You pay him for the instant noodles, and you find that the shopkeeper just sits back down on his chair and does nothing.
@@ -115,6 +117,9 @@ You pay him for the instant noodles, and you find that the shopkeeper just sits 
 “When? No, you didn’t.”
 
 Other than calling the police or starting a fight, you would have no recourse.
+<p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/9.gif?raw=true "  width="200px"/>
+        </p>
 
 The problem here was that you had to trust a human to do his part after you did yours.
 
@@ -149,3 +154,24 @@ They are mainly used to reduce the need for a trusted intermediary, disputes, an
 I repeat: it has nothing to do with contracts in the legal sense.
 
 In fact, smart contracts aren’t smart at all. They are just pieces of code that execute exactly as written. For example, if a well-known billionaire is extremely thirsty and offers to pay a million dollars for a drink, it would be smart to take it. But… the vending machine won’t take it, because it hasn’t been explicitly programmed to do so. 
+
+### 3. International Wire Transfer
+
+#### Disadvantages of the centralized banking system:
+- Huge fees while transferring money from one bank to another (e.g. $10 for every $1 transferred)
+- Time taken to transfer money is long
+
+#### How Blockchain Could Disrupt Banking
+Blockchain technology offers a secure and cheap way of sending payments that cuts down on the need for verification from third parties and beats processing times for traditional bank transfers. 90% of members of the European Payments Council believe blockchain technology will fundamentally change the industry by 2025
+
+**Example:** 
+
+Taipei, April 12, 2021 – Global financial services firm J.P. Morgan today announced that it is using blockchain technology to improve funds transfers between banking institutions globally, including payments originating from Taiwan banks to beneficiary banks in other markets. Through improved information exchange related to such payments, the new solution called Confirm is expected to help reduce the number of rejected or returned transactions caused by mismatched payment details, lowering costs for both the sending and receiving banks.
+
+### 4. Healthcare System
+
+Blockchain can be a perfect technology for record-keeping in the medical world. Its applications include sharing healthcare data, keeping electronic healthcare records, managing insurance, and performing administrative tasks. Patients can send their health information via an app to a Blockchain Network.
+
+
+if that patient store his all medical issue related data store in one block and can be accessed by other hospital and doctor then it save many times and cost.
+
