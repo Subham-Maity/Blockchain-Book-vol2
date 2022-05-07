@@ -701,3 +701,32 @@ Answer: (A)
 Answer: (A) 
 
 # Blockchain Immutable Ledger
+
+The word Immutable means “cannot be changed.” And ledger is a fancy term for record, a record of something. Therefore an Immutable Ledger is a record that cannot be changed.
+
+In the digital age we need data security and proof that the data has not been altered -- that’s the only way we can trust the digital data.
+
+Such trust and proof of trust is very necessary when we are tracking transactions of money. Imagine if you sent me an electronic funds transfer of $1000 without any proof that you sent it and no way to verify that you sent it. I would not believe you until the money showed up, and if it didn’t show up--what then?
+
+All banks and credit card processing systems use some sort of ledger to keep track of all the transactions that happen. But what if we don’t want to trust a big corporation, bank, or government with our money? Who do we trust?
+
+Blockchain technology introduced the Immutable Ledger. It’s based on math. You put your trust in that math, knowing no one can alter it or change it.
+
+But how does blockchain ensure immutability of the ledger? The foundation is what’s called the hash. The hash is like a digital signature and if a hacker tries to alter anything in the ledger, its hash will change.
+
+Once the hash changes and  no longer matches the previous hash in the ledger, the blockchain will reject that hash (making it null and void like a bad check). The hacker would have to change the next block, and the block after that, and basically the entire blockchain.
+
+They can’t do that because a copy of the blockchain resides on multiple computers around the world. The hacker would need to make all of these changes simultaneously -- hacking into every computer all around the world. This is quite literally impossible. And therefore the ledger becomes immutable -- unable to be changed.
+
+
+### Example:
+<p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/23.gif?raw=true "  width="200px"/>
+        </p>
+
+Suppose you want to sell your house to someone. Consider the scenario where you sell this property to Mr. ABC and you have all the proofs and records you need to register with the government. And what will the government do here?  Government stores this data in its centralized database. Just imagine if a hacker tampered with the data and somehow manipulated all the records, you would not be able to do anything. Your house would no longer be yours ,and you would be powerless to do anything.
+
+But in that blockchain, the data is immutable. That is, the data is not changed after it is stored in the blockchain.So no one can tamper with the data. If someone tries to tamper with the data, everyone will be notified.
+
+
+
