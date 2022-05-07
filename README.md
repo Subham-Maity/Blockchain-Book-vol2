@@ -4,7 +4,19 @@
 ## I am **[Subham Maity](https://subham-maity.github.io/subham/)**
 I love Programming. One of the aims I had when I started ```CodeXam``` was to make learning programming easy.
 ******************
-# 1. Why should we study Blockchain?
+# Chapter in This Documentation:
+* [**1. Why should we study Blockchain?**](#why-should-we-study-blockchain)
+* [**2. What is Blockchain Technology?**](#what-is-blockchain-technology)
+* [**3. Applications of Blockchain Technology**](#applications-of-blockchain-technology)
+* [**4. Blockchain Hashing Algorithm**](#blockchain-hashing-algorithm)
+* [**5. Hashing with SHA-256**](#hashing-with-sha-256)
+
+******************
+******************
+******************
+
+
+# Why should we study Blockchain?
 
 **Look at the image of 2008 financial crisis**
 
@@ -36,7 +48,7 @@ Whenever we purchase something from any website, what do we know, that it will b
 
 For that purpose, blockchain is the best solution. It is a decentralized system that allows us to store and share data without any middlemen. We are going to share many things later on.
 
-# 2. What is Blockchain Technology?
+# What is Blockchain Technology?
 
 ### Who invented blockchain in 1991?
 Stuart Haber and W. Scott Stornetta envisioned what many people have come to know as blockchain, in 1991. Their first work involved working on a cryptographically secured chain of blocks whereby no one could tamper with timestamps of documents.
