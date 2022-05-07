@@ -98,6 +98,7 @@ For that reason, blockchain could be used to track the raw materials
         </p>
 
 - smart contracts are a set of rules that are executed by a smart contract
+
 - smart contracts are run on the ethereum blockchain
 
 #### Real World Example
@@ -182,5 +183,9 @@ if that patient store his all medical issue related data store in one block and 
 # Blockchain Hashing Algorithm
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/12.gif?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/12.png?raw=true "  width="200px"/>
         </p>
+
+A hash function takes an input string (numbers, alphabets, media files) of any length and transforms it into a fixed length. The fixed bit length can vary (like 32-bit or 64-bit or 128-bit or 256-bit) depending on the hash function which is being used. The fixed-length output is called a hash. This hash is also the cryptographic byproduct of a hash algorithm. We can understand it from the following diagram.
+
+
