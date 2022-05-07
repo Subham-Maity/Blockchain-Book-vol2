@@ -12,6 +12,7 @@ body {
   padding: 20%;
 
 
+
 }
 
 
@@ -19,8 +20,8 @@ h1 {
   color: #8251ff;
 }
 h3{
-  
-  text-align: center;
+
+
   color: rgb(255, 145, 0);
   text-decoration: underline;
   list-style-type: circle;
@@ -28,14 +29,14 @@ h3{
 
 h4{
 
-  text-align: center;
+
   color: rgb(212, 255, 0);
   text-decoration: underline;
   list-style-type: circle;
 }
 li {
 
-  text-align: center;
+
   color: rgb(160, 174,255);
 
 }
@@ -46,7 +47,8 @@ h1 {
 }
 p{
   margin: 4em 5em;
-  text-align: center;
+  margin-top: 0px;
+
 
 }
 
@@ -59,10 +61,7 @@ img {
   border: 4px solid rgb(255, 145, 0);
 }
 
-*{
-  margin: 0;
-  padding: 0;
-}
+
 
 
 
