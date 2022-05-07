@@ -189,3 +189,46 @@ if that patient store his all medical issue related data store in one block and 
 A hash function takes an input string (numbers, alphabets, media files) of any length and transforms it into a fixed length. The fixed bit length can vary (like 32-bit or 64-bit or 128-bit or 256-bit) depending on the hash function which is being used. The fixed-length output is called a hash. This hash is also the cryptographic byproduct of a hash algorithm. We can understand it from the following diagram.
 
 
+<p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/13.png?raw=true "  width="200px"/>
+        </p>
+
+The hash algorithm has certain unique properties:
+
+- It produces a unique output (or hash).
+- It is a one-way function.
+
+
+In the context of cryptocurrencies like Bitcoin, the blockchain uses this cryptographic hash function's properties in its consensus mechanism. A cryptographic hash is a digest or digital fingerprints of a certain amount of data. In cryptographic hash functions, the transactions are taken as an input and run through a hashing algorithm which gives an output of a fixed size. The output is called a hash. The hash is then used to verify the integrity of the transaction.'
+
+## SHA-256
+A Bitcoin's blockchain uses SHA-256 (Secure Hash Algorithm) hashing algorithm. In 2001, SHA-256 Hashing algorithm was developed by the National Security Agency (NSA) in the USA.
+## How does the hashing process works?
+Use this website to understand how the hashing process works:
+
+https://passwordsgenerator.net/sha256-hash-generator/
+
+If we type any character in the data section, we will observe its corresponding cryptographic hash in the hash section.
+For example: We have type in data section: This is a great tutorial.
+
+It will generate the corresponding Hash:
+
+```
+88FBF3D99F89E1252E3FD89FDF4DDEBB474D419237635555222C1905425F08DF
+```
+
+<p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/14.png?raw=true "  width="200px"/>
+        </p>
+
+Now if we change the text: "This is a great tutorial." To "this is a great tutorial."
+
+You will find the corresponding Hash:
+```
+6EED417FA02389F499D3A238AB8365509B21CB65C134A4A7DC8DB1B185C7AEFB
+```
+In the above, you can see that we have changed only the first character case sentence from capital "T" to small "t" and it will change the whole Hash value.
+
+Since the Hash function is a one-way function, there is no way to get back entire text from the generated hash. This is different from traditional cryptographic functions like encryption where you can encrypt something using the key and by using decryption, you can decrypt the message to its original form.
+
+
