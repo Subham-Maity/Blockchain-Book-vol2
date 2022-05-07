@@ -10,6 +10,8 @@ I love Programming. One of the aims I had when I started ```CodeXam``` was to ma
 * [**3. Applications of Blockchain Technology**](#applications-of-blockchain-technology)
 * [**4. Blockchain Hashing Algorithm**](#blockchain-hashing-algorithm)
 * [**5. Hashing with SHA-256**](#hashing-with-sha-256)
+* [**6. Avalanche Effect in Cryptography**](#avalanche-effect-in-cryptography)
+* [**7. Blockchain Immutable Ledger**](#blockchain-immutable-ledger)
 
 ******************
 ******************

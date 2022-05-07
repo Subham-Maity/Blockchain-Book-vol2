@@ -30,6 +30,8 @@
         <li><a href="#applications-of-blockchain-technology"><strong>3. Applications of Blockchain Technology</strong></a></li>
         <li><a href="#blockchain-hashing-algorithm"><strong>4. Blockchain Hashing Algorithm</strong></a></li>
         <li><a href="#hashing-with-sha-256"><strong>5. Hashing with SHA-256</strong></a></li>
+        <li><a href="#avalanche-effect-in-cryptography"><strong>6. Avalanche Effect in Cryptography</strong></a></li>
+        <li><a href="#blockchain-immutable-ledger"><strong>7. Blockchain Immutable Ledger</strong></a></li>
     </ul>
     <hr>
     <hr>
@@ -584,6 +586,47 @@
 
 }(<span class="hljs-built_in">window</span>.helpers = <span class="hljs-built_in">window</span>.helpers || {}));
 </code></pre>
+    <h1 id="avalanche-effect-in-cryptography">Avalanche Effect in Cryptography</h1>
+    <p>In cryptography, the avalanche effect is a term associated with a specific behavior of mathematical functions used for encryption. Avalanche effect is considered as one of the desirable property of any encryption algorithm. A slight change in either the key or the plain-text should result in a significant change in the cipher-text. This property is termed as avalanche effect.</p>
+    <p>In simple words, it quantifies the effect on the cipher-text with respect to the small change made in plain text or the key. </p>
+    <p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/21.png?raw=true "  width="200px"/>
+    </p>
+
+    <p>Even though the concept of avalanche effect was identified by “Shannon’s property of confusion”, the term was first mentioned by Horst Feistel. To implement a strong cipher or cryptographic hash function, this should be considered as one of the primary design objective.</p>
+    <p>In case of algorithm that uses hash value, even a small alteration in an input string should drastically change the hash value. In other words, flipping single bit in input string should at least flip half of the bits in the hash value.</p>
+    <p>A good encryption algorithm should always satisfy the following relation: </p>
+    <pre><code><span class="hljs-type">Avalanche</span> <span class="hljs-keyword">effect</span> &gt; 50%
+</code></pre><p>The effect ensures that an attacker cannot easily predict a plain-text through a statistical analysis. An encryption algorithm that doesn’t satisfies this property can favor an easy statistical analysis. That is, if the alteration in a single bit of the input results in change of only single bit of the desired output, then it’s easy to crack the encrypted text.</p>
+    <p><strong>Examples:</strong></p>
+    <p><strong>Example-1:</strong> Avalanche effect in cryptography refers</p>
+    <p>(A) Large changes in cipher text when the keyword is changed minimally</p>
+    <p>(B) Large changes in cipher text when the plain text is changed</p>
+    <p>(C) Large impact of keyword change to length of the cipher text</p>
+    <p>(D) None of the above</p>
+    <p>Answer: (A)</p>
+    <p><strong>Example-2:</strong> Avalanche effect in cryptography</p>
+    <p>(A) Is desirable property of cryptographic algorithm</p>
+    <p>(B) Is undesirable property of cryptographic algorithm</p>
+    <p>(C) Has no effect on encryption algorithm</p>
+    <p>(D) None of the above</p>
+    <p>Answer: (A) </p>
+    <h1 id="blockchain-immutable-ledger">Blockchain Immutable Ledger</h1>
+    <p>The word Immutable means “cannot be changed.” And ledger is a fancy term for record, a record of something. Therefore an Immutable Ledger is a record that cannot be changed.</p>
+    <p>In the digital age we need data security and proof that the data has not been altered -- that’s the only way we can trust the digital data.</p>
+    <p>Such trust and proof of trust is very necessary when we are tracking transactions of money. Imagine if you sent me an electronic funds transfer of $1000 without any proof that you sent it and no way to verify that you sent it. I would not believe you until the money showed up, and if it didn’t show up--what then?</p>
+    <p>All banks and credit card processing systems use some sort of ledger to keep track of all the transactions that happen. But what if we don’t want to trust a big corporation, bank, or government with our money? Who do we trust?</p>
+    <p>Blockchain technology introduced the Immutable Ledger. It’s based on math. You put your trust in that math, knowing no one can alter it or change it.</p>
+    <p>But how does blockchain ensure immutability of the ledger? The foundation is what’s called the hash. The hash is like a digital signature and if a hacker tries to alter anything in the ledger, its hash will change.</p>
+    <p>Once the hash changes and  no longer matches the previous hash in the ledger, the blockchain will reject that hash (making it null and void like a bad check). The hacker would have to change the next block, and the block after that, and basically the entire blockchain.</p>
+    <p>They can’t do that because a copy of the blockchain resides on multiple computers around the world. The hacker would need to make all of these changes simultaneously -- hacking into every computer all around the world. This is quite literally impossible. And therefore the ledger becomes immutable -- unable to be changed.</p>
+    <h3 id="example-">Example:</h3>
+    <p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/23.gif?raw=true "  width="200px"/>
+    </p>
+
+    <p>Suppose you want to sell your house to someone. Consider the scenario where you sell this property to Mr. ABC and you have all the proofs and records you need to register with the government. And what will the government do here?  Government stores this data in its centralized database. Just imagine if a hacker tampered with the data and somehow manipulated all the records, you would not be able to do anything. Your house would no longer be yours ,and you would be powerless to do anything.</p>
+    <p>But in that blockchain, the data is immutable. That is, the data is not changed after it is stored in the blockchain.So no one can tamper with the data. If someone tries to tamper with the data, everyone will be notified.</p>
 
 </div>
 
