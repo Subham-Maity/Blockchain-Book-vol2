@@ -178,3 +178,9 @@ Blockchain can be a perfect technology for record-keeping in the medical world. 
 
 if that patient store his all medical issue related data store in one block and can be accessed by other hospital and doctor then it save many times and cost.
 
+
+# Blockchain Hashing Algorithm
+
+<p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/12.gif?raw=true "  width="200px"/>
+        </p>
