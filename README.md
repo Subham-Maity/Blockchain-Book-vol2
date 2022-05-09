@@ -14,7 +14,7 @@ I love Programming. One of the aims I had when I started ```CodeXam``` was to ma
 * [**7. Blockchain Immutable Ledger**](#blockchain-immutable-ledger)
 * [**8. P2P Network**](#p2p-network)
 * [**9. Mining in Blockchain**](#mining-in-blockchain)
-* [**10. Byzantine Generals Problem**](#byzantine-generals-problem)
+* [**10. Byzantine Generals Problem**](#the-byzantine-generals-problem)
 
 
 ******************
