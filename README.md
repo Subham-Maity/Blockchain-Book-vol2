@@ -13,6 +13,8 @@ I love Programming. One of the aims I had when I started ```CodeXam``` was to ma
 * [**6. Avalanche Effect in Cryptography**](#avalanche-effect-in-cryptography)
 * [**7. Blockchain Immutable Ledger**](#blockchain-immutable-ledger)
 * [**8. P2P Network**](#p2p-network)
+* [**9. Mining in Blockchain**](#mining-in-blockchain)
+* [**10. Byzantine Generals Problem**](#blockchain-consensus)
 
 
 ******************
@@ -839,14 +841,14 @@ Here’s where the peer-to-peer blockchain’s basic decentralized conception co
 # Mining in Blockchain
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/26.gif?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/25.gif?raw=true "  width="200px"/>
         </p>
 
 <h2 id="what_is_bitcoin_mining_in_blockchain">What Is Bitcoin Mining in Blockchain?</h2>
 <p>Bitcoin mining is the process by which Bitcoin transactions are validated digitally on the Bitcoin network and added to the blockchain ledger. It is done by solving complex cryptographic hash puzzles to verify blocks of transactions that are updated on the decentralized blockchain ledger. Solving these puzzles requires powerful computing power and sophisticated equipment. In return, miners are rewarded with Bitcoin, which is then released into circulation hence the name Bitcoin mining.</p>
 
 
-</article><article><h2 id="bitcoin_vs_traditional_currencies">Bitcoin vs. Traditional Currencies</h2>
+<h2 id="bitcoin_vs_traditional_currencies">Bitcoin vs. Traditional Currencies</h2>
 <p>While both Bitcoin and traditional currency are similar in that both are a store of value, they differ in many ways. First things first, Bitcoin is the first and most recognized cryptocurrency - a digital currency that is secured by cryptography. Traditional currency, also referred to as fiat money, is a government-issued and regulated currency. </p>
 <p>Some differences between Bitcoin and traditional currencies are illustrated in the table below. </p>
 <table><tbody>
@@ -973,8 +975,7 @@ Here’s where the peer-to-peer blockchain’s basic decentralized conception co
 
 
 <h3>The Mining Requirements </h3>
-</li>
-</ul>
+
 <p>A bitcoin miner will first select their tools of the trade and set them up. These include:</p>
 <ul>
 <li aria-level="1">Hardware GPU (graphics processing unit), SSD for crypto mining, or ASIC (application-specific integrated circuit) </li>
@@ -1002,17 +1003,25 @@ Here’s where the peer-to-peer blockchain’s basic decentralized conception co
 </ul>
 <p>A Merkle tree is a data structure of the hashes in a block and acts as a summary of all the transactions in the block. In the Merkle tree, hashes of individual transactions known as transaction IDs are paired repeatedly using the SHA-256 algorithm until only one hash identifies the entire tree. This hash is known as the Merkle root or root hash. </p>
 <p>The Merkle tree enables the efficient verification of transactions in the bitcoin network. </p>
-<ul>
 
-
-
-
-</article><article><h2 id="prevention_of_hacking">Prevention of Hacking</h2>
+<h2 id="prevention_of_hacking">Prevention of Hacking</h2>
 <p>What if someone tries to hack the data? Blockchain, as the name implies, is a chain of blocks—let’s call the blocks A, B and C. Each block has solved a puzzle and generated a hash value of its own, which is its identifier. Now suppose a person tries to tamper with block B and change the data. The data is aggregated in the block, so if the data of the block changes, then the hash value that is the digital signature of the block will also change. It will therefore corrupt the chain after it—the blocks ahead of block B will all get delinked, because the previous hash value of block C will not remain valid.</p>
 
 <p>For a hacker to make the entire blockchain valid for the block B that has been changed, he or she would have to change the hash value of all the blocks ahead of block B. This would require a huge amount of computing power and is next to impossible. With this method, blockchain is non-hackable and prevents data modification.</p>
 
 
-
-</article><article><h2 id="why_mine_bitcoin">Why Mine Bitcoin?</h2>
+<h2 id="why_mine_bitcoin">Why Mine Bitcoin?</h2>
 <p>Let’s be straight: people primarily mine Bitcoin to earn profits. Other than that, people who are curious about this technology and how it works enjoy experimenting with this relatively new technology.</p>
+
+
+# The Byzantine Generals Problem
+<p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/9.jpg?raw=true "  width="200px"/>
+        </p>
+
+Imagine that several divisions of the Byzantine army are camped outside an enemy city, each division commanded by its own general. The generals can communicate with one another only by messenger. After observing the enemy, they must decide upon a common plan of action. However, some of the generals may be traitors, trying to prevent the loyal generals from reaching an agreement. The generals must decide on when to attack the city, but they need a strong majority of their army to attack at the same time. The generals must have an algorithm to guarantee that (a) all loyal generals decide upon the same plan of action, and (b) a small number of traitors cannot cause the loyal generals to adopt a bad plan. The loyal generals will all do what the algorithm says they should, but the traitors may do anything they wish. The algorithm must guarantee condition (a) regardless of what the traitors do. The loyal generals should not only reach agreement, but should agree upon a reasonable plan.
+
+
+Byzantine fault tolerance can be achieved if the correctly working nodes in the network reach an agreement on their values. There can be a default vote value given to missing messages i.e., we can assume that the message from a particular node is ‘faulty’ if the message is not received within a certain time limit. Furthermore, we can also assign a default response if the majority of nodes respond with a correct value.
+
+Leslie Lamport proved that if we have 3m+1 correctly working processors, a consensus(agreement on same state) can be reached if atmost m processors are faulty which means that strictly more than two-thirds of the total number of processors should be honest.
