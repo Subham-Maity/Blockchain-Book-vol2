@@ -32,6 +32,10 @@
         <li><a href="#hashing-with-sha-256"><strong>5. Hashing with SHA-256</strong></a></li>
         <li><a href="#avalanche-effect-in-cryptography"><strong>6. Avalanche Effect in Cryptography</strong></a></li>
         <li><a href="#blockchain-immutable-ledger"><strong>7. Blockchain Immutable Ledger</strong></a></li>
+        <li><a href="#p2p-network"><strong>8. P2P Network</strong></a></li>
+        <li><a href="#mining-in-blockchain"><strong>9. Mining in Blockchain</strong></a></li>
+        <li><a href="#the-byzantine-generals-problem"><strong>10. Byzantine Generals Problem</strong></a></li>
+
     </ul>
     <hr>
     <hr>
@@ -627,6 +631,277 @@
 
     <p>Suppose you want to sell your house to someone. Consider the scenario where you sell this property to Mr. ABC and you have all the proofs and records you need to register with the government. And what will the government do here?  Government stores this data in its centralized database. Just imagine if a hacker tampered with the data and somehow manipulated all the records, you would not be able to do anything. Your house would no longer be yours ,and you would be powerless to do anything.</p>
     <p>But in that blockchain, the data is immutable. That is, the data is not changed after it is stored in the blockchain.So no one can tamper with the data. If someone tries to tamper with the data, everyone will be notified.</p>
+
+    <h1 id="p2p-network">P2P Network</h1>
+    <p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/24.gif?raw=true "  width="200px"/>
+    </p>
+
+    <table style=width:90%><tr><th>S.NO<th>Client-Server Network<th>Peer-to-Peer Network<tr><td>1.<td>In Client-Server Network, Clients and server are differentiated, Specific server and clients are present.<td>In Peer-to-Peer Network, Clients and server are not differentiated.<tr><td>2.<td>Client-Server Network focuses on information sharing.<td>While Peer-to-Peer Network focuses on connectivity.<tr><td>3.<td>In Client-Server Network, Centralized server is used to store the data.<td>While in Peer-to-Peer Network, Each peer has its own data.<tr><td>4.<td>In Client-Server Network, Server respond the services which is request by Client.<td>While in Peer-to-Peer Network, Each and every node can do both request and respond for the services.<tr><td>5.<td>Client-Server Network are costlier than Peer-to-Peer Network.<td>While Peer-to-Peer Network are less costlier than Client-Server Network.<tr><td>6.<td>Client-Server Network are more stable than Peer-to-Peer Network.<td>While Peer-to-Peer Network are less stable if number of peer is increase.<tr><td>7.<td>Client-Server Network is used for both small and large networks.<td>While Peer-to-Peer Network is generally suited for small networks with fewer than 10 computers.</table>
+
+
+    <p>Peer-to-peer, or P2P in its abbreviated form, refers to computer networks using a distributed architecture. In P2P networks, all the computers and devices that are part of them are referred to as peers, and they share and exchange workloads. Each peer in a peer-to-peer network is equal to the other peers. There are no privileged peers, and there is no primary administrator device in the center of the network.   A simulation of a peer-to-peer network A simulation of a peer-to-peer network In a way, peer-to-peer networks are the most egalitarian networks in the computer world. Each peer is equal to the others, and each peer has the same rights and duties as the others. Peers are both clients and servers at the same time.  In fact, every resource and each asset that&#39;s available in a peer-to-peer network is shared among peers, without any central server being involved. The shared resources in a P2P network can be things such as processor usage, disk storage capacity, or network bandwidth.</p>
+    <h3 id="example">Example</h3>
+    <p>Imagine this situation: you open your web browser and visit a website where you download a file. In this case, the website works as a server, and your computer acts as a client receiving the file. You can compare it to a one-way road: the file that you download is a car that goes from point A (the website) to point B (your computer).</p>
+    <p>Content that&#39;s transferred from a network or from the internet to a computer Content that&#39;s transferred from a network or from the internet to a computer When you download the same file from a peer-to-peer network, using a BitTorrent platform as a starting point, the download is performed differently. The file is downloaded to your computer in bits and parts that come from many other computers that also connected to the same P2P network and already have that file or at least parts of it. At the same time, the file is also sent (uploaded) from your computer to other devices that are asking for it. This situation is similar to a two-way road: the file is like multiple small cars coming to your PC, while also leaving to others when it is requested. Multiple peers sharing data between themselves</p>
+    <h2 id="why-are-peer-to-peer-networks-useful-">Why are peer-to-peer networks useful?</h2>
+    <p>P2P networks have some characteristics that make them useful:</p>
+    <ul>
+        <li>It&#39;s hard to take them down. Even if one of the peers is shut down, the others are still operating and communicating. For a P2P (peer-to-peer) network to stop working, you have to close down all its peers.</li>
+    </ul>
+    <ul>
+        <li>Peer-to-peer networks are incredibly scalable. Adding new peers is easy as you don&#39;t need to do any central configuration on a central server.</li>
+    </ul>
+    <ul>
+        <li>When it comes to file-sharing, the larger a peer-to-peer network is, the faster it is. Having the same file stored on many of the peers in a P2P network means that when someone needs to download it, the file is downloaded from multiple locations simultaneously.</li>
+    </ul>
+    <p><h2><span id="Pros_Cons_of_Peer_to_Peer_Model">Pros &amp; Cons of Peer to Peer Model</span></h2></p>
+    <table width="624">
+        <tbody>
+        <tr>
+            <td width="312"><strong>Pros</strong></td>
+            <td width="312"><strong>Cons</strong></td>
+        </tr>
+        <tr>
+            <td width="312">Cheap because it does not need a central server.</td>
+            <td width="312">It is generally slower because every user is accessed by other users.</p>
+                <p>&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="312">The network does not need a unique operating system to function.</p>
+                <p>&nbsp;</td>
+            <td width="312">Backing up data and archiving is tough because the files are handled by every user, not by a central server.</td>
+        </tr>
+        <tr>
+            <td width="312">The speed of your internet connection may have no bearing on the time it takes for your files to download.</td>
+            <td width="312">It is less secure than other network models.</p>
+                <p>&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="312">The system will not be disrupted if one of the computers crashes.</td>
+            <td width="312">Possibilities of Illegal data sharing.</p>
+                <p>&nbsp;</td>
+        </tr>
+        </tbody>
+    </table>
+    <h2><span id="Pros_Cons_of_Client-Server_Model">Pros &amp; Cons of Client-Server Model</span></h2>
+    <table width="624">
+        <tbody>
+        <tr>
+            <td width="312"><strong>Pros</strong></td>
+            <td width="312"><strong>Cons</strong></td>
+        </tr>
+        <tr>
+            <td width="312">Authorized users (clients) can access and modify data on a server, allowing for improved sharing.</p>
+                <p>&nbsp;</td>
+            <td width="312">When multiple client requests are made at the same time, servers become significantly saturated, resulting in traffic congestion.</td>
+        </tr>
+        <tr>
+            <td width="312">Access and resources are better regulated on servers, ensuring that only authorized clients can acquire or alter data.&nbsp;</td>
+            <td width="312">This network is vulnerable. If the server crashes, the whole network will collapse.</p>
+                <p>&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="312">Any new user can be simply integrated into the networks because the network is flexible enough.</td>
+            <td width="312">Maintaining a central server can be costly and require a lot of manpower and time.</p>
+                <p>&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="312">Backing up and archiving data is easier in this network.</td>
+            <td width="312">The user policies in the network must be set by an expert network administrator.</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <h2 id="example-of-p2p-in-blockchain">Example of P2P in Blockchain</h2>
+    <p>As the fundamental element of blockchain technology, P2P architecture manages cryptocurrency transactions. Cryptocurrencies leverage the power of peer-to-peer blockchain technology, as they can be exchanged or transferred without the help of any central body.</p>
+    <p>A blockchain is a distributed ledger technology which publicly and permanently stores transactions. New “blocks” containing transaction data are continuously linked to the previously filled blocks, forming a chain of data blocks — hence, a blockchain. The blockchain records transactions immutably in digital blocks that contain time-stamped particulars of senders and receivers. With no central authority managing the network, only participating nodes can validate transactions among each other.</p>
+    <p>When the individual (or group) known as Satoshi Nakamoto developed Bitcoin in 2008, they envisioned creating a “peer-to-peer electronic cash system” that operates in a trustless manner without an intermediary. P2P networks are a key component of blockchain technology, because they support a decentralized ledger of transactions. The system is “trustless,” in that the network’s architecture in itself guarantees the integrity of the transactions.</p>
+    <p>Here’s where the peer-to-peer blockchain’s basic decentralized conception comes into play. These chains aren’t kept at a centralized location or regulatory server, but are instead dispersed to all the nodes present in the network (even around the globe). As a result, each node holds a copy of the blockchain (and transaction information), thus securing and validating data stored on the network.</p>
+    <h1 id="mining-in-blockchain">Mining in Blockchain</h1>
+    <p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/25.gif?raw=true "  width="200px"/>
+    </p>
+
+    <p><h2 id="what_is_bitcoin_mining_in_blockchain">What Is Bitcoin Mining in Blockchain?</h2></p>
+    <p>Bitcoin mining is the process by which Bitcoin transactions are validated digitally on the Bitcoin network and added to the blockchain ledger. It is done by solving complex cryptographic hash puzzles to verify blocks of transactions that are updated on the decentralized blockchain ledger. Solving these puzzles requires powerful computing power and sophisticated equipment. In return, miners are rewarded with Bitcoin, which is then released into circulation hence the name Bitcoin mining.</p>
+
+
+    <p><h2 id="bitcoin_vs_traditional_currencies">Bitcoin vs. Traditional Currencies</h2></p>
+    <p>While both Bitcoin and traditional currency are similar in that both are a store of value, they differ in many ways. First things first, Bitcoin is the first and most recognized cryptocurrency - a digital currency that is secured by cryptography. Traditional currency, also referred to as fiat money, is a government-issued and regulated currency. </p>
+    <p>Some differences between Bitcoin and traditional currencies are illustrated in the table below. </p>
+    <table><tbody>
+    <tr>
+        <td></td>
+        <td>
+            <h3>Bitcoin </h3>
+        </td>
+        <td>
+            <h3>Traditional Currency </h3>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Tangibility </p>
+        </td>
+        <td>
+            <p>It is a virtual currency and can only be used in its digital form</p>
+        </td>
+        <td>
+            <p>It is a physical currency in the form of notes and coins. However, we can use it in both physical and digital forms</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Regulation </p>
+        </td>
+        <td>
+            <p>Issued through mining and controlled by a decentralized distributed network of computers  </p>
+        </td>
+        <td>
+            <p>Issued and controlled by central government authorities, i.e., central banks. Owing to this, the traditional currency is the legal tender in the country governed by the issuing authority. </p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Governance </p>
+        </td>
+        <td>
+            <p>Governed by a consensus mechanism in which the majority rules </p>
+        </td>
+        <td>
+            <p>Purely governed by the central bank </p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Value </p>
+        </td>
+        <td>
+            <p>Value is backed by the trust of its users. The more users are willing to transact with Bitcoin, the more stable it becomes.</p>
+        </td>
+        <td>
+            <p>Value is determined by forces of supply and demand and is thus vulnerable to inflation</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Supply </p>
+        </td>
+        <td>
+            <p>Capped at 21 million bitcoin </p>
+        </td>
+        <td>
+            <p>Fiat currency has no supply limit </p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Validation of transactions </p>
+        </td>
+        <td>
+            <p>Bitcoin transactions are validated using blockchain technology and so do not require an intermediary for validation</p>
+        </td>
+        <td>
+            <p>Transactions involve an intermediary such as a bank or a payment provider</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Transaction fees </p>
+        </td>
+        <td>
+            <p>Minimal or no associated fees as intermediaries have been eliminated </p>
+        </td>
+        <td>
+            <p>Transactions attract considerable charges </p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Transaction time and speed </p>
+        </td>
+        <td>
+            <p>The transaction is almost always instantaneous or greatly depends on the network speed </p>
+        </td>
+        <td>
+            <p>Transactions may take time before verification or before they reflect on the system </p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Security </p>
+        </td>
+        <td>
+            <p>The concepts of decentralization, cryptography, and consensus guarantee a secure network and security of bitcoin transactions</p>
+        </td>
+        <td>
+            <p>Less secure as it can be negatively affected by fluctuations in government policies</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Reversals </p>
+        </td>
+        <td>
+            <p>Bitcoin transactions cannot be charged back, reversed, or canceled </p>
+        </td>
+        <td>
+            <p>Chargebacks, reversals, and cancellations are commonplace with traditional currency transactions </p>
+        </td>
+    </tr>
+    </tbody></table>
+
+
+    <h3>The Mining Requirements </h3>
+
+    <p>A bitcoin miner will first select their tools of the trade and set them up. These include:</p>
+    <ul>
+        <li aria-level="1">Hardware GPU (graphics processing unit), SSD for crypto mining, or ASIC (application-specific integrated circuit) </li>
+        <li aria-level="1">Mining software </li>
+        <li aria-level="1">A wallet </li>
+        <li aria-level="1">Preferred mining pool (if one chooses pool mining option instead of solo mining) </li>
+    </ul>
+    <p>Once all these are set up and the system fired up, it performs the mining process autonomously. Any other human involvement comes in the event of system or network failure, power outage, or regular system maintenance. </p>
+    <ul>
+        <li aria-level="1">
+            <h3>Elements of a Bitcoin Transaction </h3>
+        </li>
+    </ul>
+    <p>When a transaction is initiated in the bitcoin network, three elements are involved:</p>
+    <ul>
+        <li aria-level="1">A transaction input</li>
+        <li aria-level="1">A transaction output </li>
+        <li aria-level="1">The transaction amount </li>
+    </ul>
+    <p>For every transaction input, a bitcoin mining software generates a unique cryptographic hash puzzle that is difficult to decode. The software then groups the number of transactions required to form a block into a Merkle tree. </p>
+    <ul>
+        <li aria-level="1">
+            <h3>The Merkle Tree and the SHA-256 Algorithm</h3>
+        </li>
+    </ul>
+    <p>A Merkle tree is a data structure of the hashes in a block and acts as a summary of all the transactions in the block. In the Merkle tree, hashes of individual transactions known as transaction IDs are paired repeatedly using the SHA-256 algorithm until only one hash identifies the entire tree. This hash is known as the Merkle root or root hash. </p>
+    <p>The Merkle tree enables the efficient verification of transactions in the bitcoin network. </p>
+
+    <p><h2 id="prevention_of_hacking">Prevention of Hacking</h2></p>
+    <p>What if someone tries to hack the data? Blockchain, as the name implies, is a chain of blocks—let’s call the blocks A, B and C. Each block has solved a puzzle and generated a hash value of its own, which is its identifier. Now suppose a person tries to tamper with block B and change the data. The data is aggregated in the block, so if the data of the block changes, then the hash value that is the digital signature of the block will also change. It will therefore corrupt the chain after it—the blocks ahead of block B will all get delinked, because the previous hash value of block C will not remain valid.</p>
+
+    <p>For a hacker to make the entire blockchain valid for the block B that has been changed, he or she would have to change the hash value of all the blocks ahead of block B. This would require a huge amount of computing power and is next to impossible. With this method, blockchain is non-hackable and prevents data modification.</p>
+
+
+    <p><h2 id="why_mine_bitcoin">Why Mine Bitcoin?</h2></p>
+    <p>Let’s be straight: people primarily mine Bitcoin to earn profits. Other than that, people who are curious about this technology and how it works enjoy experimenting with this relatively new technology.</p>
+
+
+    <h1 id="the-byzantine-generals-problem">The Byzantine Generals Problem</h1>
+    <p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/9.jpg?raw=true "  width="200px"/>
+    </p>
+
+    <p>Imagine that several divisions of the Byzantine army are camped outside an enemy city, each division commanded by its own general. The generals can communicate with one another only by messenger. After observing the enemy, they must decide upon a common plan of action. However, some of the generals may be traitors, trying to prevent the loyal generals from reaching an agreement. The generals must decide on when to attack the city, but they need a strong majority of their army to attack at the same time. The generals must have an algorithm to guarantee that (a) all loyal generals decide upon the same plan of action, and (b) a small number of traitors cannot cause the loyal generals to adopt a bad plan. The loyal generals will all do what the algorithm says they should, but the traitors may do anything they wish. The algorithm must guarantee condition (a) regardless of what the traitors do. The loyal generals should not only reach agreement, but should agree upon a reasonable plan.</p>
+    <p>Byzantine fault tolerance can be achieved if the correctly working nodes in the network reach an agreement on their values. There can be a default vote value given to missing messages i.e., we can assume that the message from a particular node is ‘faulty’ if the message is not received within a certain time limit. Furthermore, we can also assign a default response if the majority of nodes respond with a correct value.</p>
+    <p>Leslie Lamport proved that if we have 3m+1 correctly working processors, a consensus(agreement on same state) can be reached if atmost m processors are faulty which means that strictly more than two-thirds of the total number of processors should be honest.</p>
 
 </div>
 
