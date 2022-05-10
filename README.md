@@ -1035,5 +1035,94 @@ On the flip side, it’s an energy-intensive process that can have trouble scali
 <p align="center">
         <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/10.jpg?raw=true "  width="200px"/>
         </p>
+
 # Longest Chain Rule (Competing Chain Problem)
 
+The chain of blocks that nodes adopt as their blockchain.
+The rule that nodes adopt the longest chain of blocks allows every node on the network to agree on what the blockchain looks like, and therefore agree on the same transaction history.
+In other words it means that computers acting independently over a network can maintain a globally shared view of a file.
+
+"The proof-of-work chain is the solution to the synchronisation problem, and to knowing what the globally shared view is without having to trust anyone." – Satoshi Nakamoto
+
+
+The longest chain is the chain of blocks that took the most effort to build.
+
+In short, to add a new block to the blockchain you need to use processing power, which means that every block on the blockchain used up energy to get there.
+
+<p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/26.gif?raw=true "  width="200px"/>
+        </p>
+
+
+Therefore, a blockchain with more blocks in it will have taken more energy to build than a chain with fewer blocks in it, and as a rule nodes will always adopt this chain over a “shorter” one. 
+
+
+<p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/22.png?raw=true "  width="200px"/>
+        </p>
+
+
+ <p align="center"> Longer chains take more work to build. </p>
+
+As a result, nodes will always adopt the chain that took the most energy to build, which is what we mean when we refer to the “longest chain”.
+
+
+
+"The majority decision is represented by the longest chain, which has the greatest proof-of-work effort invested in it." – Satoshi Nakamoto
+
+
+### Commands
+You can see chainwork values for yourself using these bitcoin-cli commands:
+
+#### bitcoin-cli getblockchaininfo
+```
+$ bitcoin-cli getblockchaininfo   
+{
+  "chain": "main",
+  "blocks": 16069,
+  "headers": 16069,
+  "bestblockhash": "000000000000000003b9e3bae61fbfa09cf0a60b0e991a14a64a95ef60137003",
+  "difficulty": 1.0,
+  "mediantime": 1599098365,
+  "verificationprogress": 1.0,
+  "initialblockdownload": false,
+  "chainwork": "0000000000000000000000000000000000000000000000000000000000000002",
+  "size_on_disk": 0
+}
+
+```
+
+```
+$ bitcoin-cli getblockchaininfo                                                         
+{
+  "chain": "main",
+  "blocks": 599501,
+  "headers": 599767,
+  "bestblockhash": "0000000000000000000cb6141c8076e24f3a1799eef37201634ef392197668f3",
+  "difficulty": 13008091666971.9,
+  ...
+  "chainwork": "0000000000000000000000000000000000000000094b1874d991d4e1fc51005a",
+  ...
+}
+
+```
+
+#### bitcoin-cli getblock [blockhash]
+
+```
+$ bitcoin-cli getblock 00000000b8980ec1fe96bc1b4425788ddc88dd36699521a448ebca2020b38699
+{
+  "hash": "00000000b8980ec1fe96bc1b4425788ddc88dd36699521a448ebca2020b38699",
+  ...
+  "height": 12345,
+  ...
+  "bits": "1d00ffff",
+  "difficulty": 1,
+  "chainwork": "0000000000000000000000000000000000000000000000000000303a303a303a",
+  ...
+}
+```
+
+<p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/23.png?raw=true "  width="200px"/>
+        </p>
