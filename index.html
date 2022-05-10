@@ -35,6 +35,8 @@
         <li><a href="#p2p-network"><strong>8. P2P Network</strong></a></li>
         <li><a href="#mining-in-blockchain"><strong>9. Mining in Blockchain</strong></a></li>
         <li><a href="#the-byzantine-generals-problem"><strong>10. Byzantine Generals Problem</strong></a></li>
+        <li><a href="#blockchain-proof-of-work-and-consensus-protocols"><strong>11. Blockchain Proof of work (Consensus Protocols)</strong></a></li>
+        <li><a href="#longest-chain-rule-and-competing-chain-problems"><strong>12. Longest Chain Rule (Competing Chain Problem)</strong></a></li>
 
     </ul>
     <hr>
@@ -903,7 +905,86 @@
     <p>Byzantine fault tolerance can be achieved if the correctly working nodes in the network reach an agreement on their values. There can be a default vote value given to missing messages i.e., we can assume that the message from a particular node is ‘faulty’ if the message is not received within a certain time limit. Furthermore, we can also assign a default response if the majority of nodes respond with a correct value.</p>
     <p>Leslie Lamport proved that if we have 3m+1 correctly working processors, a consensus(agreement on same state) can be reached if atmost m processors are faulty which means that strictly more than two-thirds of the total number of processors should be honest.</p>
 
+    <h1 id="blockchain-proof-of-work-and-consensus-protocols">Blockchain Proof of work and Consensus Protocols</h1>
+    <p>Proof of work is the original crypto consensus mechanism, first used by Bitcoin. Proof of work and mining are closely related ideas. The reason it’s called “proof of work” is because the network requires a huge amount of processing power. Proof-of-work blockchains are secured and verified by virtual miners around the world racing to be the first to solve a math puzzle. The winner gets to update the blockchain with the latest verified transactions and is rewarded  by the network with a predetermined amount of crypto.
+        Proof of work has some powerful advantages, especially for a relatively simple but hugely valuable cryptocurrency like Bitcoin. It’s a proven, robust way of maintaining a secure decentralized blockchain. As the value of a cryptocurrency grows, more miners are incentivized to join the network, increasing its power and security.  Because of the amount of processing power involved, it becomes impractical for any individual or group to meddle with a valuable cryptocurrency’s blockchain.
+        On the flip side, it’s an energy-intensive process that can have trouble scaling to accommodate the vast number of transactions smart-contract compatible blockchains like Ethereum can generate. And so alternatives have been developed, the most popular of which is called proof of stake.</p>
+    <p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/10.jpg?raw=true "  width="200px"/>
+    </p>
 
+    <h1 id="longest-chain-rule-and-competing-chain-problems">Longest Chain Rule and Competing Chain Problems</h1>
+    <p>The chain of blocks that nodes adopt as their blockchain.
+        The rule that nodes adopt the longest chain of blocks allows every node on the network to agree on what the blockchain looks like, and therefore agree on the same transaction history.
+        In other words it means that computers acting independently over a network can maintain a globally shared view of a file.</p>
+    <p>&quot;The proof-of-work chain is the solution to the synchronisation problem, and to knowing what the globally shared view is without having to trust anyone.&quot; – Satoshi Nakamoto</p>
+    <p>The longest chain is the chain of blocks that took the most effort to build.</p>
+    <p>In short, to add a new block to the blockchain you need to use processing power, which means that every block on the blockchain used up energy to get there.</p>
+    <p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/26.gif?raw=true "  width="200px"/>
+    </p>
+
+
+    <p>Therefore, a blockchain with more blocks in it will have taken more energy to build than a chain with fewer blocks in it, and as a rule nodes will always adopt this chain over a “shorter” one. </p>
+    <p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/22.png?raw=true "  width="200px"/>
+    </p>
+
+
+    <p align="center"> Longer chains take more work to build. </p>
+
+    <p>As a result, nodes will always adopt the chain that took the most energy to build, which is what we mean when we refer to the “longest chain”.</p>
+    <p>&quot;The majority decision is represented by the longest chain, which has the greatest proof-of-work effort invested in it.&quot; – Satoshi Nakamoto</p>
+    <h3 id="commands">Commands</h3>
+    <p>You can see chainwork values for yourself using these bitcoin-cli commands:</p>
+    <h4 id="bitcoin-cli-getblockchaininfo">bitcoin-cli getblockchaininfo</h4>
+    <pre><code class="lang-js">
+{
+        $ bitcoin-cli getblockchaininfo
+  <span class="hljs-string">"chain"</span>: <span class="hljs-string">"main"</span>,
+  <span class="hljs-string">"blocks"</span>: <span class="hljs-number">16069</span>,
+  <span class="hljs-string">"headers"</span>: <span class="hljs-number">16069</span>,
+  <span class="hljs-string">"bestblockhash"</span>: <span class="hljs-string">"000000000000000003b9e3bae61fbfa09cf0a60b0e991a14a64a95ef60137003"</span>,
+  <span class="hljs-string">"difficulty"</span>: <span class="hljs-number">1.0</span>,
+  <span class="hljs-string">"mediantime"</span>: <span class="hljs-number">1599098365</span>,
+  <span class="hljs-string">"verificationprogress"</span>: <span class="hljs-number">1.0</span>,
+  <span class="hljs-string">"initialblockdownload"</span>: <span class="hljs-keyword">false</span>,
+  <span class="hljs-string">"chainwork"</span>: <span class="hljs-string">"0000000000000000000000000000000000000000000000000000000000000002"</span>,
+  <span class="hljs-string">"size_on_disk"</span>: <span class="hljs-number">0</span>
+}
+</code></pre><p align="center">
+<pre><code class="lang-js">
+
+$ bitcoin-cli getblockchaininfo
+
+{
+  <span class="hljs-string">"chain"</span>: <span class="hljs-string">"main"</span>,
+  <span class="hljs-string">"blocks"</span>: <span class="hljs-number">599501</span>,
+  <span class="hljs-string">"headers"</span>: <span class="hljs-number">599767</span>,
+  <span class="hljs-string">"bestblockhash"</span>: <span class="hljs-string">"0000000000000000000cb6141c8076e24f3a1799eef37201634ef392197668f3"</span>,
+  <span class="hljs-string">"difficulty"</span>: <span class="hljs-number">13008091666971.9</span>,
+  ...
+  <span class="hljs-string">"chainwork"</span>: <span class="hljs-string">"0000000000000000000000000000000000000000094b1874d991d4e1fc51005a"</span>,
+  ...
+}
+</code></pre><p align="center">
+
+</code></pre><h4 id="bitcoin-cli-getblock-blockhash-">bitcoin-cli getblock [blockhash]</h4>
+    <pre><code class="lang-js">
+    $ bitcoin-cli getblock <span class="hljs-number">00000000</span>b8980ec1fe96bc1b4425788ddc88dd36699521a448ebca2020b38699
+{
+  <span class="hljs-string">"hash"</span>: <span class="hljs-string">"00000000b8980ec1fe96bc1b4425788ddc88dd36699521a448ebca2020b38699"</span>,
+  ...
+  <span class="hljs-string">"height"</span>: <span class="hljs-number">12345</span>,
+  ...
+  <span class="hljs-string">"bits"</span>: <span class="hljs-string">"1d00ffff"</span>,
+  <span class="hljs-string">"difficulty"</span>: <span class="hljs-number">1</span>,
+  <span class="hljs-string">"chainwork"</span>: <span class="hljs-string">"0000000000000000000000000000000000000000000000000000303a303a303a"</span>,
+  ...
+}
+</code></pre><p align="center">
+    <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/23.png?raw=true "  width="200px"/>
+</p>
 </div>
 
 
