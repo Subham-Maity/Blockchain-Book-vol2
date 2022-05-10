@@ -87,7 +87,7 @@ Blockchain is a distributed ledger that is a collection of records, called block
 ### Example of Blockchain in Real Life
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/6.gif?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/6.gif?raw=true " />
         </p>
 
 
@@ -114,7 +114,7 @@ For that reason, blockchain could be used to track the raw materials
 ### 2. Smart Contracts
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/7.gif?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/7.gif?raw=true " />
         </p>
 
 - smart contracts are a set of rules that are executed by a smart contract
@@ -123,7 +123,7 @@ For that reason, blockchain could be used to track the raw materials
 
 #### Real World Example
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/8.jpg?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/8.jpg?raw=true " />
         </p>
 The shop looks like this – you pay first and then the guy hands you your stuff.
 
@@ -139,7 +139,7 @@ You pay him for the instant noodles, and you find that the shopkeeper just sits 
 
 Other than calling the police or starting a fight, you would have no recourse.
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/9.gif?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/9.gif?raw=true " />
         </p>
 
 The problem here was that you had to trust a human to do his part after you did yours.
@@ -155,7 +155,7 @@ You want to use a system that takes your money and then gives you what you want 
 Here, it would be a vending machine.
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/10.gif?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/10.gif?raw=true " />
         </p>
 
 
@@ -203,14 +203,14 @@ if that patient store his all medical issue related data store in one block and 
 # Blockchain Hashing Algorithm
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/12.png?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/12.png?raw=true " />
         </p>
 
 A hash function takes an input string (numbers, alphabets, media files) of any length and transforms it into a fixed length. The fixed bit length can vary (like 32-bit or 64-bit or 128-bit or 256-bit) depending on the hash function which is being used. The fixed-length output is called a hash. This hash is also the cryptographic byproduct of a hash algorithm. We can understand it from the following diagram.
 
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/13.png?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/13.png?raw=true " />
         </p>
 
 The hash algorithm has certain unique properties:
@@ -238,7 +238,7 @@ It will generate the corresponding Hash:
 ```
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/14.png?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/14.png?raw=true " />
         </p>
 
 Now if we change the text: "This is a great tutorial." To "this is a great tutorial."
@@ -258,7 +258,7 @@ Hash functions transform arbitrary large bit strings called messages, into small
 In SHA-256, messages up to 2⁶⁴ bit (2.3 exabytes, or 2.3 billion gigabytes) are transformed into digests of size 256 bits (32 bytes). For perspective, this means that an object 7 times the size of Facebook’s data warehouse in 2014 passed to SHA-256 would produce a chunk of data the size of a 32-letter string of ASCII characters, and that string would the object’s very special fingerprint.
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/15.png?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/15.png?raw=true " />
         </p>
 
 If we note Bⁿ the set of all bit strings of length strictly n, then we can define SHA-256 as a function from the union of bit strings sets B¹ to B²^⁶⁴, i.e. taking as input any message M of length less than 2⁶⁴, mapping to the bit string set B²⁵⁶, i.e. outputting digests H of length strictly 256.
@@ -273,7 +273,7 @@ A prominent use case of hashing is data integrity verification of large files, w
 
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/16.png?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/16.png?raw=true " />
         </p>
 
 The new message M’=M‖P is of length l’, a multiple of 512. The inclusion of L in padding P helps avoid trivial collisions (i.e. messages “00” and “000” would produce identical padded messages in the absence of L). The original message can be extracted by reading the last 64 for bits for length, and then fetching the message from left to right, of length l.
@@ -281,7 +281,7 @@ The new message M’=M‖P is of length l’, a multiple of 512. The inclusion o
 2. Blocks. M’ is parsed into N blocks of size 512 bits, M¹ to Mᴺ, and each block is expressed as 16 input blocks of size 32 bits, M₀ to M₁₅.
  
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/17.png?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/17.png?raw=true " />
         </p>
 
 Each block contains 16 input blocks, numbered from 0 to 15 in every block
@@ -289,7 +289,7 @@ Each block contains 16 input blocks, numbered from 0 to 15 in every block
 3. Hash initialization. The initial hash value H⁰ of length 256 bits (8 input blocks of 32 bits) is set by taking the first 32 bits of the fractional parts of the square roots of the first eight prime numbers:
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/18.png?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/18.png?raw=true " />
         </p>
 The eight input blocks of the initial has value H, in hexadecimal notation
 
@@ -310,7 +310,7 @@ The hash is produced by processing each message block Mⁱ of M’ in order. For
 1. Message schedule. We create a message schedule Wⁱ, consisting of four 512-bit message blocks (each made of 16 input blocks). The first block of Wⁱ is message block Mⁱ, and the next three blocks are variations of Mⁱ, obtained through the formulas in the illustration below:
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/19.png?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/19.png?raw=true " />
         </p>
 
 In the formulas, t refers to the ‘input block’ number, ranging from 0 to 63. The input blocks of the ‘shuffled blocks’ are functions of prior input blocks, and are generated with special functions, mixing right rotations (ROTR), right shifts (SHR) and exclusive ORs (⊕). Those operations are introduced in a previous article on Bitwise Patterns.
@@ -321,13 +321,13 @@ A detail: note that if we align all message schedules Wⁱ vertically, the first
 2. The big shuffle. The input blocks of message schedule W are fed, one after the other, to a function represented below as a graph. The graph takes as inputs a hash ωⁱ(t) and a message schedule input block Wⁱ(t), and outputs a hash ωⁱ(t+1). The initial hash ωⁱ(0) fed to the graph is the intermediate hash Hⁱ⁻¹: in the case of W¹, it’s H⁰ defined in the pre-processing step. ωⁱ(0) and Wⁱ(0) produce ωⁱ(1); in turn ωⁱ(1) and Wⁱ(1) produce ωⁱ(2), etc., until ωⁱ(63) is produced.
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/12.gif?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/12.gif?raw=true " />
         </p>
 
 A visual representation the transformations operated on H⁰ using input blocks from the message schedule W. The operation must be repeated 64 times until ω(63) is produced.
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/20.png?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/20.png?raw=true " />
         </p>
 
 The official loop as seen in FIPS 180–4. a, .., h are initialized as Hi⁻¹(0), .., Hi⁻¹(7). Sigma0, Sigma1, Ch, and Maj are functions using AND, XOR and negations; K is a bit word with 64 input blocks.
@@ -666,7 +666,7 @@ In cryptography, the avalanche effect is a term associated with a specific behav
 
 In simple words, it quantifies the effect on the cipher-text with respect to the small change made in plain text or the key. 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/21.png?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/21.png?raw=true " />
         </p>
 
 Even though the concept of avalanche effect was identified by “Shannon’s property of confusion”, the term was first mentioned by Horst Feistel. To implement a strong cipher or cryptographic hash function, this should be considered as one of the primary design objective.
@@ -729,7 +729,7 @@ They can’t do that because a copy of the blockchain resides on multiple comput
 
 ### Example:
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/23.gif?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/23.gif?raw=true " />
         </p>
 
 Suppose you want to sell your house to someone. Consider the scenario where you sell this property to Mr. ABC and you have all the proofs and records you need to register with the government. And what will the government do here?  Government stores this data in its centralized database. Just imagine if a hacker tampered with the data and somehow manipulated all the records, you would not be able to do anything. Your house would no longer be yours ,and you would be powerless to do anything.
@@ -740,7 +740,7 @@ But in that blockchain, the data is immutable. That is, the data is not changed 
 # P2P Network
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/24.gif?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/24.gif?raw=true " />
         </p>
 
 <table style=width:90%><tr><th>S.NO<th>Client-Server Network<th>Peer-to-Peer Network<tr><td>1.<td>In Client-Server Network, Clients and server are differentiated, Specific server and clients are present.<td>In Peer-to-Peer Network, Clients and server are not differentiated.<tr><td>2.<td>Client-Server Network focuses on information sharing.<td>While Peer-to-Peer Network focuses on connectivity.<tr><td>3.<td>In Client-Server Network, Centralized server is used to store the data.<td>While in Peer-to-Peer Network, Each peer has its own data.<tr><td>4.<td>In Client-Server Network, Server respond the services which is request by Client.<td>While in Peer-to-Peer Network, Each and every node can do both request and respond for the services.<tr><td>5.<td>Client-Server Network are costlier than Peer-to-Peer Network.<td>While Peer-to-Peer Network are less costlier than Client-Server Network.<tr><td>6.<td>Client-Server Network are more stable than Peer-to-Peer Network.<td>While Peer-to-Peer Network are less stable if number of peer is increase.<tr><td>7.<td>Client-Server Network is used for both small and large networks.<td>While Peer-to-Peer Network is generally suited for small networks with fewer than 10 computers.</table>
@@ -843,7 +843,7 @@ Here’s where the peer-to-peer blockchain’s basic decentralized conception co
 # Mining in Blockchain
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/25.gif?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/25.gif?raw=true " />
         </p>
 
 <h2 id="what_is_bitcoin_mining_in_blockchain">What Is Bitcoin Mining in Blockchain?</h2>
@@ -1018,7 +1018,7 @@ Here’s where the peer-to-peer blockchain’s basic decentralized conception co
 
 # The Byzantine Generals Problem
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/9.jpg?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/9.jpg?raw=true " />
         </p>
 
 Imagine that several divisions of the Byzantine army are camped outside an enemy city, each division commanded by its own general. The generals can communicate with one another only by messenger. After observing the enemy, they must decide upon a common plan of action. However, some of the generals may be traitors, trying to prevent the loyal generals from reaching an agreement. The generals must decide on when to attack the city, but they need a strong majority of their army to attack at the same time. The generals must have an algorithm to guarantee that (a) all loyal generals decide upon the same plan of action, and (b) a small number of traitors cannot cause the loyal generals to adopt a bad plan. The loyal generals will all do what the algorithm says they should, but the traitors may do anything they wish. The algorithm must guarantee condition (a) regardless of what the traitors do. The loyal generals should not only reach agreement, but should agree upon a reasonable plan.
@@ -1035,7 +1035,7 @@ Proof of work has some powerful advantages, especially for a relatively simple b
 On the flip side, it’s an energy-intensive process that can have trouble scaling to accommodate the vast number of transactions smart-contract compatible blockchains like Ethereum can generate. And so alternatives have been developed, the most popular of which is called proof of stake.
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/10.jpg?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/10.jpg?raw=true " />
         </p>
 
 # Longest Chain Rule and Competing Chain Problems
@@ -1052,7 +1052,7 @@ The longest chain is the chain of blocks that took the most effort to build.
 In short, to add a new block to the blockchain you need to use processing power, which means that every block on the blockchain used up energy to get there.
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/26.gif?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/26.gif?raw=true " />
         </p>
 
 
@@ -1060,7 +1060,7 @@ Therefore, a blockchain with more blocks in it will have taken more energy to bu
 
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/22.png?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/22.png?raw=true " />
         </p>
 
 
@@ -1126,7 +1126,7 @@ $ bitcoin-cli getblock 00000000b8980ec1fe96bc1b4425788ddc88dd36699521a448ebca202
 ```
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/23.png?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/23.png?raw=true " />
         </p>
 
 # How mining works
@@ -1146,7 +1146,7 @@ $ bitcoin-cli getblock 00000000b8980ec1fe96bc1b4425788ddc88dd36699521a448ebca202
 7. Block has block number.
 
 <p align="center">
-<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/24.png?raw=true "  width="200px"/>
+<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/24.png?raw=true " />
 </p>
 
 ###  But there is a another field in a block called nonce.
@@ -1156,29 +1156,29 @@ everybody changes this nonce field everytime.
 suppose nonce is 0.
  
 <p align="center">
-<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/25.png?raw=true "  width="200px"/>
+<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/25.png?raw=true " />
 </p>
 
 now we put 19 and get a different hash.  then 20 - 21 -22 -23
 <p align="center">
-<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/26.png?raw=true "  width="200px"/>
+<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/26.png?raw=true " />
 </p>
 
 <p align="center">
-<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/27.png?raw=true "  width="200px"/>
+<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/27.png?raw=true " />
 </p>
 
 
 <p align="center">
-<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/28.png?raw=true "  width="200px"/>
+<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/28.png?raw=true " />
 </p>
 
 <p align="center">
-<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/29.png?raw=true "  width="200px"/>
+<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/29.png?raw=true " />
 </p>
 
 <p align="center">
-<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/30.png?raw=true "  width="200px"/>
+<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/30.png?raw=true " />
 </p>
 
 
@@ -1220,7 +1220,7 @@ now we put 19 and get a different hash.  then 20 - 21 -22 -23
 # What is Bitcoin?  Bitcoin vs Blockchain 
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/27.gif?raw=true "  width="200px"/>
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/27.gif?raw=true " />
         </p>
 
 Blockchain is the technology that underpins the cryptocurrency Bitcoin, but Bitcoin is not the only version of a blockchain distributed ledger system in the market. There are several other cryptocurrencies with their own blockchain and distributed ledger architectures.
