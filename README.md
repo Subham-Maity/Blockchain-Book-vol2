@@ -1024,4 +1024,16 @@ Imagine that several divisions of the Byzantine army are camped outside an enemy
 
 Byzantine fault tolerance can be achieved if the correctly working nodes in the network reach an agreement on their values. There can be a default vote value given to missing messages i.e., we can assume that the message from a particular node is ‘faulty’ if the message is not received within a certain time limit. Furthermore, we can also assign a default response if the majority of nodes respond with a correct value.
 
-Leslie Lamport proved that if we have 3m+1 correctly working processors, a consensus(agreement on same state) can be reached if atmost m processors are faulty which means that strictly more than two-thirds of the total number of processors should be honest.
+Leslie Lamport proved that if we have 3m+1 correctly working processors, a consensus(agreement on same state) can be reached if almost m processors are faulty which means that strictly more than two-thirds of the total number of processors should be honest.
+
+
+# Blockchain Proof of work (Consensus Protocols)
+Proof of work is the original crypto consensus mechanism, first used by Bitcoin. Proof of work and mining are closely related ideas. The reason it’s called “proof of work” is because the network requires a huge amount of processing power. Proof-of-work blockchains are secured and verified by virtual miners around the world racing to be the first to solve a math puzzle. The winner gets to update the blockchain with the latest verified transactions and is rewarded  by the network with a predetermined amount of crypto.
+Proof of work has some powerful advantages, especially for a relatively simple but hugely valuable cryptocurrency like Bitcoin. It’s a proven, robust way of maintaining a secure decentralized blockchain. As the value of a cryptocurrency grows, more miners are incentivized to join the network, increasing its power and security.  Because of the amount of processing power involved, it becomes impractical for any individual or group to meddle with a valuable cryptocurrency’s blockchain.
+On the flip side, it’s an energy-intensive process that can have trouble scaling to accommodate the vast number of transactions smart-contract compatible blockchains like Ethereum can generate. And so alternatives have been developed, the most popular of which is called proof of stake.
+
+<p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/10.jpg?raw=true "  width="200px"/>
+        </p>
+# Longest Chain Rule (Competing Chain Problem)
+
