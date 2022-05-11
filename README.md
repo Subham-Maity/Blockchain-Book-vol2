@@ -1264,10 +1264,38 @@ It's called the golden nonce and bacause it generated that has military as you c
 </p>
 
   
-  
+# Demo of the Blockchain 
+
+### Visit this website to see the demo of the blockchain Click Here [Demo](https://tools.superdatascience.com/blockchain/distributed)
  
+Thanks to these two Guys you can check out the code on Github.
+
+https://github.com/anders94/blockchain-demo
+
+### **1. If I press on the mine button you can see the nonce and hash will change and why it was red because it didn't have valid hash value.** 
 
 
+<p align="center">
+<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/40.png?raw=true " />
+</p>
+
+
+
+<p align="center">
+<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/41.png?raw=true " />
+</p>
+
+
+### **2. Let's try to temper/hack the data in the block and see what happens.**
+
+You can see even I try to manipulate the data and mine one still remain block are not matched with the previous block.
+
+
+
+
+<p align="center">
+<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/28.png?raw=true " />
+</p>
 
 
 
