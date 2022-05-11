@@ -1182,62 +1182,109 @@ now we put 19 and get a different hash.  then 20 - 21 -22 -23
 </p>
 
 
+## So what is nonce?
+Cryptocurrency like Bitcoin uses the Block chain as a decentralized, distributed, public digital ledger that records all the transactions of the Bitcoin. Block Chain has a unique feature of storing the value of previous block as a hash value in the current block, which makes it impossible to alter any block without changing all the subsequent blocks.
+
+The miners create a block and verify it and will be rewarded for using their CPU power to do so. The block which gets more than 50% consensus will be added to the block chain. During the verification of Block, the miners will complete the Proof of Work which covers all the data of the block, and checks whether the hash value of the current block is lesser than the target.
 
 
 
+To create a block which will be accepted by most of the network participants, Miners compete to complete the Proof of Work at the earliest. The difficulty of the work is adjusted to take at least 10 minutes per Block, which has become a standard time to add a block to the block chain in case of Bitcoin Network.
+
+Nonce is the central part of this Proof of Work. The Nonce is a random whole number, which is a 32-bit (4 byte) field, which is adjusted by the miners, so that it becomes a valid number to be used for hashing the value of block. Nonce is the number which can be used only once. Once the perfect Nonce is found, it is added to the hashed block. Along with this number, the hash value of that block will get rehashed and creates a difficult algorithm.
+
+It is compared to the existing target, whether it is lower or equal to the current target. Miners test and discard millions of Nonce per second until they find that Golden Nonce which is valid. In order to complete the verification faster than other miners, miners compete with each other using their computer hashing power. Once the Golden Nonce is found, they can complete the Block and add it to the Block Chain and there by receive the Block reward.
 
 
 
+This rules out the possibility of any duplication, or using the same bitcoin twice. Whether rest of the fields are changed or not, Nonce will change because it is unique and thus became the most important component of the Proof of Work. In cryptography, a nonce is an arbitrary number that can be used just once in a cryptographic communication. It is often a random number issued in an authentication protocol to ensure that, same communication is not reused.
+
+There will be some constant information, timestamp, hash value with difficulty, and the nonce which when passed through Hash algorithm – SHA256 will become a new block. Here nonce plays a very important role. As we have already discussed, millions of nonce values are tried until the Golden Nonce is found.The target hash value is defined as the difficulty and the iterative calculation of the hash value requires the miner’s computer resources. Only with the correct Nonce value, proof of work can be created and thus giving birth to a new Block in the Block chain.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# What is Bitcoin?  Bitcoin vs Blockchain 
+## Now we are gonna visualize hash 
+It's going to be smallest to largest.
 
 <p align="center">
-        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/27.gif?raw=true " />
-        </p>
+<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/31.png?raw=true " />
+</p>
 
-Blockchain is the technology that underpins the cryptocurrency Bitcoin, but Bitcoin is not the only version of a blockchain distributed ledger system in the market. There are several other cryptocurrencies with their own blockchain and distributed ledger architectures.
+<p align="center">
+<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/32.png?raw=true " />
+</p>
 
-Meanwhile, the decentralisation of the technology has also led to several schisms or forks within the Bitcoin network, creating offshoots of the ledger where some miners use a blockchain with one set of rules, and others use a blockchain with another set of rules.
+
+Now let's set a target
+
+<p align="center">
+<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/33.png?raw=true " />
+</p>
+
+Now if any hash higher than the target, it will be rejected.
+
+<p align="center">
+<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/34.png?raw=true " />
+</p>
 
 
-### The Bitcoin Original Story 
+If a miner found that hash value is higher than the target, he will reject the block.
 
-In late 2008, around the time of the financial crisis, a ground-breaking post appeared on a little-known internet forum entitled Bitcoin: A peer-to-peer electronic cash system. It was written by a mysterious person called Satoshi Nakamoto, a pseudonym used to disguise the author’s true identity.
+<p align="center">
+<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/35.png?raw=true " />
+</p>
 
-Satoshi thought that the banks and governments had too much power that they used in their own self-interests. Satoshi envisaged a new type of money called Bitcoin that could change that: a cryptocurrency that wasn’t controlled or run by central banks or governments, that you could send anywhere around the world for free, with no person or institution in charge.
 
-At first nobody paid attention to Satoshi’s wild ideas – but slowly more and more people started buying and using Bitcoin. Many believed it was the future of money, and the worse the big banks behaved the more popular it became.
+So as you can see the lower you are the smaller the number and the more leading zeros will be in the hash value so if you think of the target rather than as it like I remember trying to remember the target is in terms of hashing.Just remember the number of leading zeros for instance for eating zero.
 
-Since it was formulated and launched in 2009, Bitcoin has grown to a network of around 10,000 “nodes” or participants which use the Proof of Work system to validate transactions and mine bitcoin.
 
-This democracy prevailed until the development of specific mining computers called ASICs which overtook other less powerful machines, and companies began to profit from amassing miners and mining technology. It is still possible for an individual to take part in the Bitcoin process, but it is expensive to set up and the return on investment fluctuates with the highly volatile value of bitcoin itself.
+so if we plot the hash onto out map of hashes you'll see that it might be somewhere over there and that's the hash and this label is just to remind us that this hash was generated from the block when the nonce is 23.    
 
-Today, massive mining pools are owned or controlled by large corporations, and power is centralising again. This evolution has somewhat undermined Satoshi’s original vision for blockchain in which the "power” of participants was designed to be evenly distributed - but is now concentrated in the hands of half a dozen mining conglomerates.
+<p align="center">
+<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/36.png?raw=true " />
+</p>
+
+let's change the nonce you can see now the nonce is here it's smaller hash and that was generated by nonce 22. 
+
+<p align="center">
+<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/37.png?raw=true " />
+</p>
+
+
+
+Miners just sit there ,and they change this field they change the nonce ,and they keep trying to find the correct nonce that will generate a hash value that is lower than the target.
+<p align="center">
+<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/38.png?raw=true " />
+</p>
+And once they do generate such value so for instance they find unknowns at some point at random by accident through brute force.They get these nonces commonly called among miners.
+It's called the golden nonce and bacause it generated that has military as you can see as those four leading zeros is below the target.
+
+<p align="center">
+<img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/39.png?raw=true " />
+</p>
+
+  
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
