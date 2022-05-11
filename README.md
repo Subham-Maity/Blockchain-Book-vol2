@@ -17,6 +17,7 @@ I love Programming. One of the aims I had when I started ```CodeXam``` was to ma
 * [**10. Byzantine Generals Problem**](#the-byzantine-generals-problem)
 * [**11. Blockchain Proof of work (Consensus Protocols)**](#blockchain-proof-of-work-and-consensus-protocols)
 * [**12. Longest Chain Rule (Competing Chain Problem)**](#longest-chain-rule-and-competing-chain-problems)
+* [**13. How mining works**](#how-mining-works)
 
 
 ******************
