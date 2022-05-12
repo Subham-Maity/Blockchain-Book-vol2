@@ -38,6 +38,8 @@
         <li><a href="#blockchain-proof-of-work-and-consensus-protocols"><strong>11. Blockchain Proof of work (Consensus Protocols)</strong></a></li>
         <li><a href="#longest-chain-rule-and-competing-chain-problems"><strong>12. Longest Chain Rule (Competing Chain Problem)</strong></a></li>
         <li><a href="#how-mining-works"><strong>13. How mining works</strong></a></li>
+        <li><a href="#demo-of-the-blockchain"><strong>14. Demo of the Blockchain</strong></a></li>
+        <li><a href="#create-our-blockchain"><strong>15. Let's create our blockchain</strong></a></li>
 
     </ul>
     <hr>
@@ -970,6 +972,7 @@ $ bitcoin-cli getblockchaininfo
 }
 </code></pre><p align="center">
 
+
 </code></pre><h4 id="bitcoin-cli-getblock-blockhash-">bitcoin-cli getblock [blockhash]</h4>
     <pre><code class="lang-js">
     $ bitcoin-cli getblock <span class="hljs-number">00000000</span>b8980ec1fe96bc1b4425788ddc88dd36699521a448ebca2020b38699
@@ -1099,6 +1102,246 @@ $ bitcoin-cli getblockchaininfo
     <p align="center">
         <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/39.png?raw=true " />
     </p>
+    <h2 id="so-what-is-nonce-">So what is nonce?</h2>
+    <p>Cryptocurrency like Bitcoin uses the Block chain as a decentralized, distributed, public digital ledger that records all the transactions of the Bitcoin. Block Chain has a unique feature of storing the value of previous block as a hash value in the current block, which makes it impossible to alter any block without changing all the subsequent blocks.</p>
+    <p>The miners create a block and verify it and will be rewarded for using their CPU power to do so. The block which gets more than 50% consensus will be added to the block chain. During the verification of Block, the miners will complete the Proof of Work which covers all the data of the block, and checks whether the hash value of the current block is lesser than the target.</p>
+    <p>To create a block which will be accepted by most of the network participants, Miners compete to complete the Proof of Work at the earliest. The difficulty of the work is adjusted to take at least 10 minutes per Block, which has become a standard time to add a block to the block chain in case of Bitcoin Network.</p>
+    <p>Nonce is the central part of this Proof of Work. The Nonce is a random whole number, which is a 32-bit (4 byte) field, which is adjusted by the miners, so that it becomes a valid number to be used for hashing the value of block. Nonce is the number which can be used only once. Once the perfect Nonce is found, it is added to the hashed block. Along with this number, the hash value of that block will get rehashed and creates a difficult algorithm.</p>
+    <p>It is compared to the existing target, whether it is lower or equal to the current target. Miners test and discard millions of Nonce per second until they find that Golden Nonce which is valid. In order to complete the verification faster than other miners, miners compete with each other using their computer hashing power. Once the Golden Nonce is found, they can complete the Block and add it to the Block Chain and there by receive the Block reward.</p>
+    <p>This rules out the possibility of any duplication, or using the same bitcoin twice. Whether rest of the fields are changed or not, Nonce will change because it is unique and thus became the most important component of the Proof of Work. In cryptography, a nonce is an arbitrary number that can be used just once in a cryptographic communication. It is often a random number issued in an authentication protocol to ensure that, same communication is not reused.</p>
+    <p>There will be some constant information, timestamp, hash value with difficulty, and the nonce which when passed through Hash algorithm – SHA256 will become a new block. Here nonce plays a very important role. As we have already discussed, millions of nonce values are tried until the Golden Nonce is found.The target hash value is defined as the difficulty and the iterative calculation of the hash value requires the miner’s computer resources. Only with the correct Nonce value, proof of work can be created and thus giving birth to a new Block in the Block chain.</p>
+    <h2 id="now-we-are-gonna-visualize-hash">Now we are gonna visualize hash</h2>
+    <p>It&#39;s going to be smallest to largest.</p>
+    <p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/31.png?raw=true " />
+    </p>
+
+    <p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/32.png?raw=true " />
+    </p>
+
+
+    <p>Now let&#39;s set a target</p>
+    <p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/33.png?raw=true " />
+    </p>
+
+    <p>Now if any hash higher than the target, it will be rejected.</p>
+    <p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/34.png?raw=true " />
+    </p>
+
+
+    <p>If a miner found that hash value is higher than the target, he will reject the block.</p>
+    <p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/35.png?raw=true " />
+    </p>
+
+
+    <p>So as you can see the lower you are the smaller the number and the more leading zeros will be in the hash value so if you think of the target rather than as it like I remember trying to remember the target is in terms of hashing.Just remember the number of leading zeros for instance for eating zero.</p>
+    <p>so if we plot the hash onto out map of hashes you&#39;ll see that it might be somewhere over there and that&#39;s the hash and this label is just to remind us that this hash was generated from the block when the nonce is 23.    </p>
+    <p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/36.png?raw=true " />
+    </p>
+
+    <p>let&#39;s change the nonce you can see now the nonce is here it&#39;s smaller hash and that was generated by nonce 22. </p>
+    <p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/37.png?raw=true " />
+    </p>
+
+
+
+    <p>Miners just sit there ,and they change this field they change the nonce ,and they keep trying to find the correct nonce that will generate a hash value that is lower than the target.</p>
+    <p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/38.png?raw=true " />
+    </p>
+    And once they do generate such value so for instance they find unknowns at some point at random by accident through brute force.They get these nonces commonly called among miners.
+    It&#39;s called the golden nonce and bacause it generated that has military as you can see as those four leading zeros is below the target.
+
+    <p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/39.png?raw=true " />
+    </p>
+
+
+    <h1 id="demo-of-the-blockchain">Demo of the Blockchain</h1>
+    <h3 id="visit-this-website-to-see-the-demo-of-the-blockchain-click-here-demo-https-tools-superdatascience-com-blockchain-distributed-">Visit this website to see the demo of the blockchain Click Here <a href="https://tools.superdatascience.com/blockchain/distributed">Demo</a></h3>
+    <p>Thanks to these two Guys you can check out the code on Github.</p>
+    <p><a href="https://github.com/anders94/blockchain-demo">https://github.com/anders94/blockchain-demo</a></p>
+    <h3 id="-1-if-i-press-on-the-mine-button-you-can-see-the-nonce-and-hash-will-change-and-why-it-was-red-because-it-didn-t-have-valid-hash-value-"><strong>1. If I press on the mine button you can see the nonce and hash will change and why it was red because it didn&#39;t have valid hash value.</strong></h3>
+    <p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/40.png?raw=true " />
+    </p>
+
+
+
+    <p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/41.png?raw=true " />
+    </p>
+
+
+    <h3 id="-2-let-s-try-to-temper-hack-the-data-in-the-block-and-see-what-happens-"><strong>2. Let&#39;s try to temper/hack the data in the block and see what happens.</strong></h3>
+    <p>You can see even I try to manipulate the data and mine one still remain block are not matched with the previous block.</p>
+    <p align="center">
+        <img src="https://github.com/Subham-Maity/Blockchain-Book-vol2/blob/master/Image%20Ignore/28.gif?raw=true " />
+    </p>
+
+
+
+
+    <h3 id="let-s-look-on-the-distributed-blockchain">Let&#39;s look on the distributed blockchain</h3>
+    <p>If you try to change one data and mine this still hash will not be matched with the another network what we discussed earlier in p2p network.</p>
+    <h1 id="create-our-blockchain">Create our blockchain</h1>
+    <pre><code class="lang-python">import hashlib
+
+#Python <span class="hljs-keyword">has</span> a built-<span class="hljs-keyword">in</span> <span class="hljs-keyword">library</span>, hashlib , that <span class="hljs-keyword">is</span> designed <span class="hljs-keyword">to</span> provide a common <span class="hljs-keyword">interface</span> <span class="hljs-keyword">to</span> different secure hashing algorithms
+def hashGenerator(data):
+    <span class="hljs-keyword">result</span>=hashlib.sha256(data.encode())
+    return <span class="hljs-keyword">result</span>.hexdigest()
+
+<span class="hljs-keyword">class</span> <span class="hljs-keyword">Block</span>:
+    def __init__(<span class="hljs-keyword">self</span>,data,hash,prev_hash):
+        <span class="hljs-keyword">self</span>.data=data
+        <span class="hljs-keyword">self</span>.hash=hash
+        <span class="hljs-keyword">self</span>.prev_hash=prev_hash
+
+<span class="hljs-keyword">class</span> Blockchain:
+    def __init__(<span class="hljs-keyword">self</span>):
+      hashLast=hashGenerator(<span class="hljs-string">'gen_last'</span>)
+      hashStart=hashGenerator(<span class="hljs-string">'gen_hash'</span>)
+
+    #hash last <span class="hljs-keyword">is</span> previous <span class="hljs-keyword">block</span><span class="hljs-string">'s data'</span>
+    #genesis <span class="hljs-keyword">block</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">create</span> just made this <span class="hljs-keyword">as</span> a part <span class="hljs-keyword">of</span> chain
+      genesis=<span class="hljs-keyword">Block</span>(<span class="hljs-string">'gen-data'</span>,hashStart,hashLast)
+      <span class="hljs-keyword">self</span>.chain=[genesis]
+
+    def add_block(<span class="hljs-keyword">self</span>,data):
+        prev_hash=<span class="hljs-keyword">self</span>.chain[-<span class="hljs-number">1</span>].hash
+        hash=hashGenerator(data+prev_hash)
+        <span class="hljs-keyword">block</span>=<span class="hljs-keyword">Block</span>(data,hash,prev_hash)
+        <span class="hljs-keyword">self</span>.chain.append(<span class="hljs-keyword">block</span>)
+
+bc=Blockchain()
+bc.add_block(<span class="hljs-string">'1'</span>)
+bc.add_block(<span class="hljs-string">'2'</span>)
+bc.add_block(<span class="hljs-string">'3'</span>)
+
+<span class="hljs-keyword">for</span> <span class="hljs-keyword">block</span> <span class="hljs-keyword">in</span> bc.chain:
+    print(<span class="hljs-keyword">block</span>.__dict__)
+</code></pre>
+    <h3 id="output-">Output:</h3>
+    <pre><code class="lang-js">
+{'data': 'gen-data', 'hash': '0a87388e67f16d830a9a3323dad0fdfa4c4044a6a6389cab1a0a37b651a5717b', 'prev_hash': 'bd6fecc16d509c74d23b04f00f936705e3eaa907b04b78872044607665018477'}
+{'data': '1', 'hash': 'e3e6c97161f3deaf01599fda60ba85593b07f70328bf228473d1d408f7400241', 'prev_hash': '0a87388e67f16d830a9a3323dad0fdfa4c4044a6a6389cab1a0a37b651a5717b'}
+{'data': '2', 'hash': '47e8645e3c14bd4034a498aa88ea630bc0793375207bf90ca469792a5d9484e1', 'prev_hash': 'e3e6c97161f3deaf01599fda60ba85593b07f70328bf228473d1d408f7400241'}
+{'data': '3', 'hash': '82084603decb1a14a8819dacaa86197659f1e150c4a50186e68043004b5a3c06', 'prev_hash': '47e8645e3c14bd4034a498aa88ea630bc0793375207bf90ca469792a5d9484e1'}
+</code></pre><p align="center">
+
+    <h2 id="building-a-blockchain-mining-our-blockchain-getting-the-full-blockchain">Building a Blockchain &amp; Mining our Blockchain &amp; Getting the full Blockchain</h2>
+    <pre><code class="lang-python"><span class="hljs-comment"># Module 1 - Create a Blockchain</span>
+
+<span class="hljs-comment"># To be installed:</span>
+<span class="hljs-comment"># Flask==0.12.2: pip install Flask==0.12.2</span>
+<span class="hljs-comment"># Postman HTTP Client: https://www.getpostman.com/</span>
+
+<span class="hljs-comment"># Importing the libraries</span>
+import datetime
+import hashlib
+import json
+from flask import Flask, jsonify
+
+<span class="hljs-comment"># Part 1 - Building a Blockchain</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Blockchain</span>:</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">_init_</span><span class="hljs-params">(<span class="hljs-keyword">self</span>)</span></span>:
+        <span class="hljs-keyword">self</span>.chain = []
+        <span class="hljs-keyword">self</span>.create_block(proof = <span class="hljs-number">1</span>, previous_hash = <span class="hljs-string">'0'</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">create_block</span><span class="hljs-params">(<span class="hljs-keyword">self</span>, proof, previous_hash)</span></span>:
+        block = {<span class="hljs-string">'index'</span>: len(<span class="hljs-keyword">self</span>.chain) + <span class="hljs-number">1</span>,
+                 <span class="hljs-string">'timestamp'</span>: str(datetime.datetime.now()),
+                 <span class="hljs-string">'proof'</span>: proof,
+                 <span class="hljs-string">'previous_hash'</span>: previous_hash}
+        <span class="hljs-keyword">self</span>.chain.append(block)
+        <span class="hljs-keyword">return</span> block
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_previous_block</span><span class="hljs-params">(<span class="hljs-keyword">self</span>)</span></span>:
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span>.chain[-<span class="hljs-number">1</span>]
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">proof_of_work</span><span class="hljs-params">(<span class="hljs-keyword">self</span>, previous_proof)</span></span>:
+        new_proof = <span class="hljs-number">1</span>
+        check_proof = False
+        <span class="hljs-keyword">while</span> check_proof is <span class="hljs-symbol">False:</span>
+            hash_operation = hashlib.sha256(str(new_proof*<span class="hljs-number">2</span> - previous_proof*<span class="hljs-number">2</span>).encode()).hexdigest()
+            <span class="hljs-keyword">if</span> hash_operation[<span class="hljs-symbol">:</span><span class="hljs-number">4</span>] == <span class="hljs-string">'0000'</span>:
+                check_proof = True
+            <span class="hljs-symbol">else:</span>
+                new_proof += <span class="hljs-number">1</span>
+        <span class="hljs-keyword">return</span> new_proof
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hash</span><span class="hljs-params">(<span class="hljs-keyword">self</span>, block)</span></span>:
+        encoded_block = json.dumps(block, sort_keys = True).encode()
+        <span class="hljs-keyword">return</span> hashlib.sha256(encoded_block).hexdigest()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_chain_valid</span><span class="hljs-params">(<span class="hljs-keyword">self</span>, chain)</span></span>:
+        previous_block = chain[<span class="hljs-number">0</span>]
+        block_index = <span class="hljs-number">1</span>
+        <span class="hljs-keyword">while</span> block_index &lt; len(chain):
+            block = chain[block_index]
+            <span class="hljs-keyword">if</span> block[<span class="hljs-string">'previous_hash'</span>] != <span class="hljs-keyword">self</span>.hash(previous_block):
+                <span class="hljs-keyword">return</span> False
+            previous_proof = previous_block[<span class="hljs-string">'proof'</span>]
+            proof = block[<span class="hljs-string">'proof'</span>]
+            hash_operation = hashlib.sha256(str(proof*<span class="hljs-number">2</span> - previous_proof*<span class="hljs-number">2</span>).encode()).hexdigest()
+            <span class="hljs-keyword">if</span> hash_operation[<span class="hljs-symbol">:</span><span class="hljs-number">4</span>] != <span class="hljs-string">'0000'</span>:
+                <span class="hljs-keyword">return</span> False
+            previous_block = block
+            block_index += <span class="hljs-number">1</span>
+        <span class="hljs-keyword">return</span> True
+
+<span class="hljs-comment"># Part 2 - Mining our Blockchain</span>
+
+<span class="hljs-comment"># Creating a Web App</span>
+app = Flask(_name<span class="hljs-number">_</span>)
+
+<span class="hljs-comment"># Creating a Blockchain</span>
+blockchain = Blockchain()
+
+<span class="hljs-comment"># Mining a new block</span>
+@app.route(<span class="hljs-string">'/mine_block'</span>, methods = [<span class="hljs-string">'GET'</span>])
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mine_block</span><span class="hljs-params">()</span></span>:
+    previous_block = blockchain.get_previous_block()
+    previous_proof = previous_block[<span class="hljs-string">'proof'</span>]
+    proof = blockchain.proof_of_work(previous_proof)
+    previous_hash = blockchain.hash(previous_block)
+    block = blockchain.create_block(proof, previous_hash)
+    response = {<span class="hljs-string">'message'</span>: <span class="hljs-string">'Congratulations, you just mined a block!'</span>,
+                <span class="hljs-string">'index'</span>: block[<span class="hljs-string">'index'</span>],
+                <span class="hljs-string">'timestamp'</span>: block[<span class="hljs-string">'timestamp'</span>],
+                <span class="hljs-string">'proof'</span>: block[<span class="hljs-string">'proof'</span>],
+                <span class="hljs-string">'previous_hash'</span>: block[<span class="hljs-string">'previous_hash'</span>]}
+    <span class="hljs-keyword">return</span> jsonify(response), <span class="hljs-number">200</span>
+
+<span class="hljs-comment"># Getting the full Blockchain</span>
+@app.route(<span class="hljs-string">'/get_chain'</span>, methods = [<span class="hljs-string">'GET'</span>])
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_chain</span><span class="hljs-params">()</span></span>:
+    response = {<span class="hljs-string">'chain'</span>: blockchain.chain,
+                <span class="hljs-string">'length'</span>: len(blockchain.chain)}
+    <span class="hljs-keyword">return</span> jsonify(response), <span class="hljs-number">200</span>
+
+<span class="hljs-comment"># Checking if the Blockchain is valid</span>
+@app.route(<span class="hljs-string">'/is_valid'</span>, methods = [<span class="hljs-string">'GET'</span>])
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_valid</span><span class="hljs-params">()</span></span>:
+    is_valid = blockchain.is_chain_valid(blockchain.chain)
+    <span class="hljs-keyword">if</span> <span class="hljs-symbol">is_valid:</span>
+        response = {<span class="hljs-string">'message'</span>: <span class="hljs-string">'All good. The Blockchain is valid.'</span>}
+    <span class="hljs-symbol">else:</span>
+        response = {<span class="hljs-string">'message'</span>: <span class="hljs-string">'Houston, we have a problem. The Blockchain is not valid.'</span>}
+    <span class="hljs-keyword">return</span> jsonify(response), <span class="hljs-number">200</span>
+
+<span class="hljs-comment"># Running the app</span>
+app.run(host = <span class="hljs-string">'0.0.0.0'</span>, port = <span class="hljs-number">5000</span>)
+</code></pre>
 
 
 </div>
